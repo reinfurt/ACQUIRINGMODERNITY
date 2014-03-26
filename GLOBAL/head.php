@@ -74,11 +74,9 @@ if ( ($live) || ($dev) ) {
 	<div id='address' class='navContainer'>
 			
 		<br /><br /><br /><br /><br /><br />
-		<span class='black'><a href="index.php">Zena Zezza</a></span><br />
-		Portland, Oregon<br /> 
-		USA<br />
-		+1 415 321 9304<br />
-		<a href="mailto:zena@zenazezza.org">zena@zenazezza.org</a>
+		<a href="index.php">Acquiring Modernity</a><br />
+		Kuwait participation for 2014 Venice Architecture Biennale<br /> 
+		<a href="mailto:info@acquiringmodernity.com">info@acquiringmodernity.com</a>
 	
 		<div id='nav' class='palatino'>
 			<ul>		

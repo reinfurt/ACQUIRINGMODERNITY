@@ -12,6 +12,9 @@ if ( ($live) || ($dev) ) {
 	
 	<div id='main' class='mainContainer hidden'>
 		<div class = 'blankContainer'>&nbsp;</div>
+
+		<img src="MEDIA/To-be-continued_480p.gif" style="width:1200px;">
+		
 		<?php
 		
 			// Query uses LEFT JOIN and multiple selection criteria to get objects with and without media from Front Page and News and return these in randomly sequenced rows . . . returns NULL if no media object attached to record
