@@ -1,0 +1,118 @@
+<?php 
+	date_default_timezone_set('America/New_York');
+
+	require_once("_Library/systemDatabase.php"); 
+	require_once("_Library/systemCookie.php");
+	require_once("_Library/displayNavigation.php"); 
+	require_once("_Library/displayMedia.php"); 
+
+
+	// Parse $id
+
+	$id = $_REQUEST['id'];		// no register globals	
+	if (!$id) $id = "0";
+	$ids = explode(",", $id);
+	$idFull = $id;
+	$id = $ids[count($ids) - 1];
+	$pageName = basename($_SERVER['PHP_SELF'], ".php");
+	$documentTitle = "--";
+	// echo $pageName .  "?id=" . $id;
+	
+	// Live?
+	
+	// $live is stored in database and turns on site
+	// $dev is passed in query and stored in cookie
+
+	$dev = $_REQUEST['dev'];
+	$dev = systemCookie("devCookie", $dev, 0);
+	// if (!$dev) die('Under construction . . .');
+
+	$staging = $_REQUEST['staging'];
+	$sql    = "SELECT deck FROM objects WHERE objects.name1 LIKE 'Live';";
+	$result =  MYSQL_QUERY($sql);
+	$myrow  =  MYSQL_FETCH_ARRAY($result);
+	$deck = $myrow["deck"];
+	if ( $deck == 'TRUE' ) $live = TRUE;
+	
+	echo "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n"; 
+?>
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//Dtd XHTML 1.0 Transitional//EN" "http://www.w3.org/tr/xhtml1/Dtd/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+	<title><?php echo $documentTitle; ?></title>
+	<meta http-equiv="Content-Type" content="text/xhtml; charset=utf-8" />
+	<meta http-equiv="Title" content="<?php echo $documentTitle; ?>" />
+	<link rel="stylesheet" type="text/css" media="all" href="GLOBAL/global.css" />
+	<script type="text/javascript" src="GLOBAL/global.js"></script>
+	<script src="_Processing/processing-1.4.1.min.js"></script>
+	
+	<script type="text/javascript">
+				
+		function init() {
+
+			setTimeout("objectShow('main')", 2000);        
+		}
+
+		<?php
+			if ( !$id ) echo "window.onload = init;";
+		?>
+
+	</script>		
+</head>
+<body>
+
+<?php
+if ( ($live) || ($dev) ) {
+?>
+	
+	<!--  NAV  -->
+	
+	<div id='address' class='navContainer'>
+			
+		<br /><br /><br /><br /><br /><br />
+		<span class='black'><a href="index.php">Zena Zezza</a></span><br />
+		Portland, Oregon<br /> 
+		USA<br />
+		+1 415 321 9304<br />
+		<a href="mailto:zena@zenazezza.org">zena@zenazezza.org</a>
+	
+		<div id='nav' class='palatino'>
+			<ul>		
+				<?php	
+	
+					$path = "0";		// hard-coded hack for "+ Menu" branch
+					$limit = 1;
+					$selection = $idFull;
+					$linkPageName = $pageName; 
+					$breadcrumbsMode = FALSE;
+					$multiColumn = 20;	// used to indent menu?
+					// $stub = TRUE;
+					// if (!$breadcrumbsMode) ($id) ? $breadcrumbsMode = TRUE : $breadcrumbsMode = FALSE;
+					displayNavigation($path, $limit, $selection, $linkPageName, $stub, $breadcrumbsMode, $multiColumn);
+		
+				?>	
+			</ul>
+		</div>	
+	</div> 
+
+<?php
+}
+?>
+
+
+<?php 
+
+	// Label
+	
+	$html  = "<div id='badge' class='labelContainer'>";
+	$html .= "<a href='index.php'><img src='MEDIA/logo.jpg' style='width: 100%;' alt='label' /></a>";		
+	$html .= "</div>";
+	
+	//echo $html;
+			
+?>
+

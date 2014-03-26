@@ -1,0 +1,328 @@
+/* Document */
+
+/*
+@font-face {
+    font-family: 'neo_eulermedium';
+    src: url('../_Fonts/euler-webfont.eot');
+    src: url('../_Fonts/euler-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../_Fonts/euler-webfont.woff') format('woff'),
+         url('../_Fonts/euler-webfont.ttf') format('truetype'),
+         url('../_Fonts/euler-webfont.svg#neo_eulermedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+*/
+
+img {
+	border-style:none;
+	}
+
+body {
+	font-family: "Times New Roman", Times, serif; 
+	font-size: 15.5px;
+	line-height: 18px;
+	text-align: left;
+	margin:20px;
+	color:#FFF;
+	background: #000;
+	}
+
+a:link {	
+	color: #FC0; 
+	text-decoration: none; 
+	}
+
+a:visited {
+	color: #FC0; 
+	text-decoration: none; 
+	}
+
+a:hover {
+	color: #000; 
+	text-decoration: none; 
+	}
+	
+a:active { 
+	color: #FFF; 
+	text-decoration: none; 	
+	}
+
+a.tooltip span {
+	display:none; 
+	padding:2px; 
+	margin-left:8px; 
+	width:300px;
+	}
+
+a.tooltip:hover span{
+	display:inline; 
+	position:absolute; 
+	/* background:transparent; */
+	background:#FFF;
+	border:1px solid #CCC;
+	color:#000;
+	}
+	
+.palatino {
+	font-family: "palatinoroman", "Times New Roman", Times, serif; 
+	}
+
+.euler {
+	font-family: "neo_eulermedium", "Times New Roman", Times, serif; 
+	}
+
+
+
+/* Containers */
+
+.navContainer {
+	position: fixed;
+	top: 0px;
+	left: 40px;
+	z-index: 90;
+	}
+
+.mainContainer {
+	position: relative;
+	top: 120px;
+	width: 99%;
+	z-index: 50;
+	text-align: center;
+	}
+	
+.bodyContainer {
+	position: relative;
+	top: 0px;
+	left: 25%;
+	width: 50%;
+	z-index: 10;
+	}	
+	
+.blankContainer {
+	float: left;
+	width: 300px;
+	height: 200px;
+	}
+	
+.thumbsContainer {
+	float: right;
+	}
+
+.imageContainer {
+	text-align: center;
+	background-color:#FFF;
+	}
+
+.detailContainer {
+	width: 400px;
+	}
+	
+.coverContainer {
+	width: 100%;
+	}
+	
+.coverContainer:hover { 
+	}
+
+.captionContainer {
+	width: 100%;
+	text-align: center;
+	padding: 5px 0 0 0;
+	}		
+	
+.captionContainer:hover { 
+	}
+	
+.titleContainer {
+	position: fixed;
+	top: 10px;
+	left: 10px;
+	width: 400px;
+	z-index: 99;
+	}
+	
+.wordsContainer {
+	width: 500px;
+	}
+
+.wordsPopContainer {
+	width: 400px;
+	}
+	
+.timeContainer {
+	position: absolute;
+	left: 40px;
+	text-align: left;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	}
+
+.timeContainerWrapper {
+	position: fixed;
+	top: 10px;
+	left: 98%;
+	width: 150px;
+	margin: 0 0 0 -140px;
+	z-index: 90;
+	}
+	
+.servedContainer {
+	padding: 30px;
+	}
+
+.labelContainer {
+	position: fixed;
+	top: 10px; 
+	left: 50%; 
+	width: 360px; 
+	height: 141px; 
+	margin: 0 0 0 -180px;
+	z-index: 0;
+	}
+
+.clockContainer {
+	position: fixed;
+	top: 50%; 
+	left: 50%;
+	width: 200px;
+	height: 200px; 
+	margin: -100px 0 0 -100px;
+	z-index: 90;
+	}	
+
+.aboutContainer {
+	/* position: fixed; */
+	top: 0px; 
+	left: 0px;
+	width: 200px;
+	/* margin: -100px 0 0 -100px; */
+	z-index: 90;
+	}	
+	
+.menuContainer {
+	position: fixed;
+	z-index: 90;
+	top: 10px; 
+	left: 10px;
+	}
+	
+	
+	
+/* Type */
+
+.caption {
+	font-size: 11px;
+	line-height: 12px; 
+	}
+	
+.body {
+	font-size: 18px;
+	line-height: 20px; 
+	}
+
+.detail {
+	font-size: 16px;
+	line-height: 18px; 
+	}
+
+.issue1:hover {
+	color:#00E;
+	}
+
+
+
+/* Utility */
+
+.pad {
+	padding: 30px;
+	}
+
+.hidden {
+	visibility:hidden;
+	}
+
+.clear {
+	clear:both;
+	}
+
+.active {
+	margin-left: -40px;
+	}
+
+.active a {
+	color:#FC0;
+	}
+
+.active a:hover {
+	color:#000;
+	}
+
+.active a:active {
+	color:#FFF;
+	}
+
+.static {
+	margin-left: -40px;
+	}
+	
+.static a {
+	color:#000;
+	}
+
+.static a:hover {
+	color:#FC0;
+	}
+
+.static a:active {
+	color:#FFF;
+	}
+	
+.red {
+	color: #F00; 
+	}
+
+.black {
+	color: #000; 
+	}
+
+.black a {
+	color: #000; 
+	}
+	
+.black a:hover {
+	color: #FC0; 
+	}
+	
+.black a:active {
+	color: #FFF; 
+	}
+
+.green {
+	color: #0B0; 
+	}
+	
+.green a {
+	color: #0B0; 
+	}
+	
+.green a:visited {
+	color: #0B0; 
+	}
+	
+.green a:hover {
+	color: #000; 
+	}
+	
+.green a:active {
+	color: #FFF; 
+	}
+	
+.arrow a { 
+	background-image:url('/MEDIA/arrow.gif');
+	background-repeat:no-repeat;
+	padding: 0 0 0 16px;
+	}
+	
+	
+	
+	
