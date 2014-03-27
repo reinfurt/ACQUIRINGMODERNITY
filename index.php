@@ -2,20 +2,72 @@
 	require_once("GLOBAL/head.php"); 
 ?>
 
-
-<?php 
+<?php
 if ( ($live) || ($dev) ) {
 ?>
 		
-	<img src="MEDIA/To-be-continued_480p.gif" style="width:800px;">		
+	<!-- <img src="MEDIA/To-be-continued_480p.gif" style="width:800px;"> -->
 	
 	<!--  MAIN  -->
-	
-	<div id='main' class='mainContainer hidden'>
-		<div class = 'blankContainer'>&nbsp;</div>
 
-		
+	<div id='01' class='topleftContainer'>
+		1
+	        <script type="text/javascript" src="GLOBAL/animateCircle.js"></script>
+        	<div>
+                	<canvas id="canvas1" width="400" height="400">
+	                This browser or document mode doesn't support canvas object
+        	        </canvas>
+        	</div>
+	</div>	
+
+	<div id='02' class='toprightContainer'>
+		2
+		<video width="480" height="854" autoplay="autoplay" loop> 
+			<source src="MEDIA/To-be-continued_01_240p.mov" type="video/mp4" />
+  			Your browser does not support the video tag.
+		</video>
+
+		<video width="480" height="854" autoplay="autoplay" loop> 
+			<source src="MEDIA/To-be-continued_02_240p.mov" type="video/mp4" />
+  			Your browser does not support the video tag.
+		</video>
+	</div>	
+
+	<div id='03' class='bottomleftContainer'>
+		3
+		<img src="MEDIA/KuwaitNationalMuseum.gif" style="width:400px;">
+	</div>	
+
+	<div id='04' class='bottomrightContainer'>
+		4
+
+        <!-- TIME -->
+
+        <div id='timeWrapper' class='timeContainerWrapper'>
+        <div id='time' class='timeContainer helvetica big'>
+
+                <script type="text/javascript">
+                <!--
+
+                // Init clock
+
+                var currenttime = '<?php echo date("F d, Y H:i:s", time());?>';
+                var montharray = new Array("JAN","FEB","MAR","APR","MAY","JUN","JUL","AUG","SEP","OCT","NOV","DEC");
+                var serverdate = new Date(currenttime);
+
+                //-->
+                </script>
+
+                <p id='serverTime'></p>
+
+        </div>
+        </div>
+
+	</div>	
+
+
 		<?php
+		/*		
 		
 			// Query uses LEFT JOIN and multiple selection criteria to get objects with and without media from Front Page and News and return these in randomly sequenced rows . . . returns NULL if no media object attached to record
 
@@ -54,18 +106,15 @@ if ( ($live) || ($dev) ) {
 				$html .= "</a>";
 				echo $html;		
 			}
+		} 
+		*/
 		?>
-	<br /><br /><br />
-	</div>
-	
 
-<?php 
+<?php
 }
 ?>
-
 
 <?php	
 	echo "\n\n\n\n\n";
 	require_once("GLOBAL/foot.php"); 
 ?>
-

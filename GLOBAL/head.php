@@ -1,5 +1,5 @@
 <?php 
-	date_default_timezone_set('America/New_York');
+	date_default_timezone_set('Asia/Kuwait');
 
 	require_once("_Library/systemDatabase.php"); 
 	require_once("_Library/systemCookie.php");
@@ -49,17 +49,10 @@
 	<!-- <meta charset="utf-8"> -->
 	<link rel="stylesheet" type="text/css" media="all" href="GLOBAL/global.css" />
 	<script type="text/javascript" src="GLOBAL/global.js"></script>
-	<script type="text/javascript" src="GLOBAL/animateCircle.js"></script>
 	<!-- <script src="_Processing/processing-1.4.1.min.js"></script> -->
 </head>
 
-<body onload="init();">
-
-        <div>
-                <canvas id="canvas1" width="200" height="200">
-                This browser or document mode doesn't support canvas object
-                </canvas>
-        </div>
+<body onload="init(); displayTime(); setInterval('displayTime()',1000);">
 
 <?php
 if ( ($live) || ($dev) ) {
@@ -68,15 +61,14 @@ if ( ($live) || ($dev) ) {
 	<!--  NAV  -->
 	
 	<div id='address' class='navContainer'>
-
 	<p dir="rtl" lang="AR"> رَبٍّ زِدْنٍي عِلمًا </p>
 			
 		<br /><br /><br /><br /><br /><br />
 		<a href="index.php">Acquiring Modernity</a><br />
-		Kuwait participation for 2014 Venice Architecture Biennale<br /> 
+		Kuwait national participation for <a href="http://www.labiennale.org/en/architecture/">2014 La Biennale Architettura di Venezia</a><br /> 
 		<a href="mailto:info@acquiringmodernity.com">info@acquiringmodernity.com</a>
 	
-		<div id='nav' class='palatino'>
+		<div id='nav' class='helvetica'>
 			<ul>		
 				<?php	
 	

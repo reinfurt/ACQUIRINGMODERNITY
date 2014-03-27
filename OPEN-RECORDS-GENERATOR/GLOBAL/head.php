@@ -1,5 +1,6 @@
 <?php
-date_default_timezone_set('America/New_York'); 
+date_default_timezone_set('Asia/Kuwait'); 
+
 require_once("config.php");
 $pageName = basename($_SERVER['PHP_SELF'], ".php");
 $object = $_REQUEST['object'];

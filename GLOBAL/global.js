@@ -1,5 +1,5 @@
 // Server clock
-// (must be initialized in the head with a PHP date object)
+// (must be initialized in the head (or body) with a PHP date object)
 
 function padlength(what) {
 		
@@ -10,7 +10,7 @@ function padlength(what) {
 function displayTime() {
 		
 	serverdate.setSeconds(serverdate.getSeconds()+1);
-						
+
 	var datestring = padlength(serverdate.getFullYear() + " " + montharray[serverdate.getMonth()] + " " + serverdate.getDate()) + " ";
 			
 	// convert to 12 hour
@@ -21,7 +21,7 @@ function displayTime() {
 	currentHours = ( currentHours == 0 ) ? 12 : currentHours;
   		
 	var timestring = currentHours + ":" + padlength(serverdate.getMinutes()) + ":" + padlength(serverdate.getSeconds()) + " " + amPm;
-			
+
 	document.getElementById("serverTime").innerHTML=datestring + " " + timestring;
 }
 		

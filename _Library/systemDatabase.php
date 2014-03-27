@@ -11,7 +11,7 @@ function systemDatabase() {
 
 	$dbMainHost = "localhost";
 	$dbMainUser = "root";
-	$dbMainPass = "";
+	$dbMainPass = "tupelo";
 	$dbMainDbse = "kuwait_local";
 
 	$dbConnect = MYSQL_CONNECT($dbMainHost, $dbMainUser, $dbMainPass);

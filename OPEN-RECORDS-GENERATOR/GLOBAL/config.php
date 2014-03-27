@@ -60,9 +60,9 @@ function dbConnectMain($dbUser) {
 	$dbMainHost = "localhost";
 	$dbMainDbse = "kuwait_local";
 
-	if 		($dbUser == 1) {		$dbMainUser = "root"; 	$dbMainPass = ""; }
-	else if ($dbUser == 2) {		$dbMainUser = "root"; 	$dbMainPass = ""; }
-	else if ($dbUser == 3) {		$dbMainUser = "root";   	$dbMainPass = ""; }
+	if 		($dbUser == 1) {		$dbMainUser = "root"; 	$dbMainPass = "tupelo"; }
+	else if ($dbUser == 2) {		$dbMainUser = "root"; 	$dbMainPass = "tupelo"; }
+	else if ($dbUser == 3) {		$dbMainUser = "root";   	$dbMainPass = "tupelo"; }
 
 	$dbConnect = MYSQL_CONNECT($dbMainHost, $dbMainUser, $dbMainPass);
 	MYSQL_SELECT_DB($dbMainDbse, $dbConnect);

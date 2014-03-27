@@ -63,14 +63,18 @@ a.tooltip:hover span{
 	color:#000;
 	}
 	
-.palatino {
-	font-family: "palatinoroman", "Times New Roman", Times, serif; 
+.helvetica {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
 	}
 
-.euler {
-	font-family: "neo_eulermedium", "Times New Roman", Times, serif; 
-	}
+.monaco {
+        font-family: Monaco, "Lucida Console", monospace;
+        }
 
+.big {
+        font-size: 36px;
+        line-height: 36px;
+        }
 
 
 /* Containers */
@@ -83,7 +87,6 @@ a.tooltip:hover span{
 	}
 
 .mainContainer {
-	position: relative;
 	top: 120px;
 	width: 99%;
 	z-index: 50;
@@ -91,13 +94,46 @@ a.tooltip:hover span{
 	}
 	
 .bodyContainer {
-	position: relative;
 	top: 0px;
 	left: 25%;
 	width: 50%;
 	z-index: 10;
 	}	
-	
+
+.topleftContainer {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 50%;
+	height: 50%;
+	}	
+
+.toprightContainer {
+	position: absolute;
+	top: 0px;
+	left: 50%;
+	width: 50%;
+	height: 50%;
+	}	
+
+.bottomleftContainer {
+	position: absolute;
+	top: 50%;
+	left: 0px;
+	width: 50%;
+	height: 50%;
+	}	
+
+.bottomrightContainer {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 50%;
+	height: 50%;
+	}	
+
+/* these are currently unused */
+
 .blankContainer {
 	float: left;
 	width: 300px;
@@ -113,17 +149,6 @@ a.tooltip:hover span{
 	background-color:#FFF;
 	}
 
-.detailContainer {
-	width: 400px;
-	}
-	
-.coverContainer {
-	width: 100%;
-	}
-	
-.coverContainer:hover { 
-	}
-
 .captionContainer {
 	width: 100%;
 	text-align: center;
@@ -132,54 +157,24 @@ a.tooltip:hover span{
 	
 .captionContainer:hover { 
 	}
-	
-.titleContainer {
-	position: fixed;
-	top: 10px;
-	left: 10px;
-	width: 400px;
-	z-index: 99;
-	}
-	
-.wordsContainer {
-	width: 500px;
-	}
-
-.wordsPopContainer {
-	width: 400px;
-	}
-	
+		
 .timeContainer {
 	position: absolute;
-	left: 40px;
+	left: 0px;
 	text-align: left;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	}
 
 .timeContainerWrapper {
-	position: fixed;
-	top: 10px;
-	left: 98%;
-	width: 150px;
-	margin: 0 0 0 -140px;
+	position: absolute;
+	top: 50%;
+	left: 0px;
+	width: 500px;
+	margin: 0 0 0 0px;
 	z-index: 90;
 	}
 	
-.servedContainer {
-	padding: 30px;
-	}
-
-.labelContainer {
-	position: fixed;
-	top: 10px; 
-	left: 50%; 
-	width: 360px; 
-	height: 141px; 
-	margin: 0 0 0 -180px;
-	z-index: 0;
-	}
-
 .clockContainer {
 	position: fixed;
 	top: 50%; 
@@ -189,24 +184,8 @@ a.tooltip:hover span{
 	margin: -100px 0 0 -100px;
 	z-index: 90;
 	}	
+	
 
-.aboutContainer {
-	/* position: fixed; */
-	top: 0px; 
-	left: 0px;
-	width: 200px;
-	/* margin: -100px 0 0 -100px; */
-	z-index: 90;
-	}	
-	
-.menuContainer {
-	position: fixed;
-	z-index: 90;
-	top: 10px; 
-	left: 10px;
-	}
-	
-	
 	
 /* Type */
 
