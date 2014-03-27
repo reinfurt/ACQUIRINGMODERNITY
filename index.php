@@ -7,13 +7,13 @@
 if ( ($live) || ($dev) ) {
 ?>
 		
+	<img src="MEDIA/To-be-continued_480p.gif" style="width:800px;">		
 	
 	<!--  MAIN  -->
 	
 	<div id='main' class='mainContainer hidden'>
 		<div class = 'blankContainer'>&nbsp;</div>
 
-		<img src="MEDIA/To-be-continued_480p.gif" style="width:1200px;">
 		
 		<?php
 		

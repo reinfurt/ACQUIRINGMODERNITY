@@ -40,30 +40,60 @@
 
 
 <!DOCTYPE html PUBLIC "-//W3C//Dtd XHTML 1.0 Transitional//EN" "http://www.w3.org/tr/xhtml1/Dtd/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 
 <head>
 	<title><?php echo $documentTitle; ?></title>
 	<meta http-equiv="Content-Type" content="text/xhtml; charset=utf-8" />
-	<meta http-equiv="Title" content="<?php echo $documentTitle; ?>" />
+	<meta http-equiv="Title" content="<?php echo $documentTitle; ?>" />		
+	<!-- <meta charset="utf-8"> -->
 	<link rel="stylesheet" type="text/css" media="all" href="GLOBAL/global.css" />
 	<script type="text/javascript" src="GLOBAL/global.js"></script>
-	<script src="_Processing/processing-1.4.1.min.js"></script>
+
+ <script type="text/javascript">
+        var canvas, context, step, steps, frames, delay;
+        var centerX, centerY, radius, direction;
+        var counter;    
+ 
+        function init() {
+                canvas = document.getElementById("canvas1");
+                context = canvas.getContext("2d");
+                centerX = canvas.width / 2;
+                centerY = canvas.height / 2;
+                context.fillStyle = "white";
+                context.lineWidth = 5;
+                context.strokeStyle = "#FFF";
+                counter = 0;
+                radius = 70;
+                frames = 60;
+                step = 2.0 * Math.PI / frames;
+                delay = 25;
+                direction = 1;
+                animateNext();
+        }
+ 
+        function animateNext() {
+                counter++;
+                context.clearRect(0, 0, canvas.width, canvas.height);
+                var thisStep = (counter % frames) * step * direction;
+                context.beginPath();
+                context.arc(centerX, centerY, radius, 0, thisStep, false);
+                context.stroke();
+                var t = setTimeout('animateNext()', delay);
+        }
+    </script>
+
+	<!-- <script src="_Processing/processing-1.4.1.min.js"></script> -->
 	
-	<script type="text/javascript">
-				
-		function init() {
-
-			setTimeout("objectShow('main')", 2000);        
-		}
-
-		<?php
-			if ( !$id ) echo "window.onload = init;";
-		?>
-
-	</script>		
 </head>
-<body>
+
+<body onload="init();">
+
+        <div>
+                <canvas id="canvas1" width="200" height="200">
+                This browser or document mode doesn't support canvas object
+                </canvas>
+        </div>
 
 <?php
 if ( ($live) || ($dev) ) {
@@ -72,6 +102,8 @@ if ( ($live) || ($dev) ) {
 	<!--  NAV  -->
 	
 	<div id='address' class='navContainer'>
+
+	<p dir="rtl" lang="AR"> رَبٍّ زِدْنٍي عِلمًا </p>
 			
 		<br /><br /><br /><br /><br /><br />
 		<a href="index.php">Acquiring Modernity</a><br />
