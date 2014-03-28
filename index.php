@@ -5,9 +5,7 @@
 <?php
 if ( ($live) || ($dev) ) {
 ?>
-		
-	<!-- <img src="MEDIA/To-be-continued_480p.gif" style="width:800px;"> -->
-	
+			
 	<!--  MAIN  -->
 
 	<div id='01' class='topleftContainer'>
@@ -22,15 +20,16 @@ if ( ($live) || ($dev) ) {
 
 	<div id='02' class='toprightContainer'>
 		2
-		<video width="480" height="854" autoplay="autoplay" loop> 
-			<source src="MEDIA/To-be-continued_01_240p.mov" type="video/mp4" />
-  			Your browser does not support the video tag.
-		</video>
-
-		<video width="480" height="854" autoplay="autoplay" loop> 
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<video width="427" height="240" autoplay="autoplay" loop> 
 			<source src="MEDIA/To-be-continued_02_240p.mov" type="video/mp4" />
   			Your browser does not support the video tag.
 		</video>
+
 	</div>	
 
 	<div id='03' class='bottomleftContainer'>
