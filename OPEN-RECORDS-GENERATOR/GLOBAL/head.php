@@ -22,9 +22,8 @@ $mediaDelete = $_REQUEST['mediaDelete'];
 $mediaType = $_REQUEST['mediaType'];
 
 // Debug           
-
 // print_r($_REQUEST);
-// $dbUserSelected = 1;
+
 
 
 
@@ -34,29 +33,11 @@ $mediaType = $_REQUEST['mediaType'];
  //            //
 ////////////////
 
-if( !isset( $_SERVER['PHP_AUTH_USER'] ) )
-{
-	header( 'WWW-Authenticate: Basic realm="OPEN-RECORDS-GENERATOR"' );
-	header( 'HTTP/1.0 401 Unauthorized' );
-	echo    'Authorization Required.';
-	exit;
-}
-else if( isset( $_SERVER['PHP_AUTH_USER'] ) )
-{
-	if 	( ( ($_SERVER['PHP_AUTH_USER'] != $dbUser1) && ($_SERVER['PHP_AUTH_USER'] != $dbUser2) && ($_SERVER['PHP_AUTH_USER'] != $dbUser3) )
-		|| ( ($_SERVER['PHP_AUTH_PW'] != $dbPass1) && ($_SERVER['PHP_AUTH_PW'] != $dbPass2) && ($_SERVER['PHP_AUTH_PW'] != $dbPass3) ) )
-	{
-		header( 'WWW-Authenticate: Basic realm="OPEN-RECORDS-GENERATOR"' );
-		header( 'HTTP/1.0 401 Unauthorized' );
-		echo    'Authorization Required.';
-		exit;
-	}
-	else {
-		if ($_SERVER['PHP_AUTH_USER'] == $dbUser1) $dbUserSelected = 1;
-		if ($_SERVER['PHP_AUTH_USER'] == $dbUser2) $dbUserSelected = 2;
-		if ($_SERVER['PHP_AUTH_USER'] == $dbUser3) $dbUserSelected = 3;
-	}
-}
+// by .htaccess and .htpasswd
+$dbUserSelected = 1;
+
+
+
 
 
 
