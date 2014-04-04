@@ -15,7 +15,7 @@
 	$idFull = $id;
 	$id = $ids[count($ids) - 1];
 	$pageName = basename($_SERVER['PHP_SELF'], ".php");
-	$documentTitle = "--";
+	$documentTitle = "الحصول على الحداثة";
 	// echo $pageName .  "?id=" . $id;
 	
 	// Live?
@@ -26,6 +26,10 @@
 	$dev = $_REQUEST['dev'];
 	$dev = systemCookie("devCookie", $dev, 0);
 	// if (!$dev) die('Under construction . . .');
+
+	// Language
+
+	$l	 = $_REQUEST['l'];
 
 	$staging = $_REQUEST['staging'];
 	$sql    = "SELECT deck FROM objects WHERE objects.name1 LIKE 'Live';";
@@ -58,20 +62,52 @@
 if ( ($live) || ($dev) ) {
 ?>
 	
-	<!--  NAV  -->
+	<!--  NAME  -->
 	
-	<div id='address' class='navContainer'>
-	<p dir="rtl" lang="AR"> رَبٍّ زِدْنٍي عِلمًا </p>
-			
-		<br /><br /><br /><br /><br /><br />
+	<div id='arabic' class='arabicContainer'>
+	<?php 
+	if ($l=="ar") {
+	?>
+		<p dir="rtl" lang="AR" class="green">
+		<a href="index.php?l=ar">
+الحصول على الحداثة </br>
+		</a>
+<span style="color:#FFF;">
+مشاركة وطنية الكويت لعام 2014 البندقية العمارة بينالي
+</span>
+		</p>
+	<?php
+	} else {
+	?>
+		<p dir="rtl" lang="AR" class="green">
+		<a href="index.php?l=ar">
+الحصول على الحداثة 
+		</a>
+		</p>
+	<?php
+	} 
+	?>
+	</div>
+
+	<div id='english' class='englishContainer'>
+
+        <?php
+        if ($l=="en") {
+        ?>
 		<a href="index.php">Acquiring Modernity</a><br />
-		Kuwait national participation for <a href="http://www.labiennale.org/en/architecture/">2014 La Biennale Architettura di Venezia</a><br /> 
-		<a href="mailto:info@acquiringmodernity.com">info@acquiringmodernity.com</a>
+		Kuwait national participation for 2014 La Biennale Architettura di Venezia<br /> 
+	<?php
+	} else {
+	?>
+		<a href="index.php?l=en">Acquiring Modernity</a><br />
+	<?php
+	} 
+	?>
 	
 		<div id='nav' class='helvetica'>
 			<ul>		
 				<?php	
-	
+				/*	
 					$path = "0";		// hard-coded hack for "+ Menu" branch
 					$limit = 1;
 					$selection = $idFull;
@@ -81,10 +117,10 @@ if ( ($live) || ($dev) ) {
 					// $stub = TRUE;
 					// if (!$breadcrumbsMode) ($id) ? $breadcrumbsMode = TRUE : $breadcrumbsMode = FALSE;
 					displayNavigation($path, $limit, $selection, $linkPageName, $stub, $breadcrumbsMode, $multiColumn);
-		
+				*/
 				?>	
 			</ul>
-		</div>	
+		</div>
 	</div> 
 
 <?php

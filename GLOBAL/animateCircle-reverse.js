@@ -21,10 +21,10 @@
                 frames = 60;
                 step = 2.0 * Math.PI / frames;
                 delay = 25;
-                direction = 1;
+                direction = -1;
                 animateNext();
         }
- 
+
         function animateNext() {
                 counter++;
                 context.clearRect(0, 0, canvas.width, canvas.height);
