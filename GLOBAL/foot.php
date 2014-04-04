@@ -9,7 +9,7 @@
 		$html  .= "<div class='timeContainer caption'>";
 		$html .= date('Y-m-d g:i:s A');
 		$html .= "</div>";
-		echo $html;			
+		// echo $html;			
 	}
 ?>
 	</body>

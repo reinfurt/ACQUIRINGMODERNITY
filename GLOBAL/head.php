@@ -60,13 +60,12 @@ if ( ($live) || ($dev) ) {
 	
 	<!--  NAV  -->
 	
-	<div id='address' class='navContainer'>
-	<p dir="rtl" lang="AR"> رَبٍّ زِدْنٍي عِلمًا </p>
-			
-		<br /><br /><br /><br /><br /><br />
+	<div id='address' class='nameContainer'>
+
+	<p dir="rtl" lang="AR" class="green">العربيةًا </p>
+
 		<a href="index.php">Acquiring Modernity</a><br />
-		Kuwait national participation for <a href="http://www.labiennale.org/en/architecture/">2014 La Biennale Architettura di Venezia</a><br /> 
-		<a href="mailto:info@acquiringmodernity.com">info@acquiringmodernity.com</a>
+		Kuwait national participation for 2014 La Biennale Architettura di Venezia<br /> 
 	
 		<div id='nav' class='helvetica'>
 			<ul>		

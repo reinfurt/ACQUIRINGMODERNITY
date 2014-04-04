@@ -9,36 +9,34 @@ if ( ($live) || ($dev) ) {
 	<!--  MAIN  -->
 
 	<div id='01' class='topleftContainer'>
-		1
+	<div id='01inner' class='innerContainer'>
 	        <script type="text/javascript" src="GLOBAL/animateCircle.js"></script>
         	<div>
-                	<canvas id="canvas1" width="400" height="400">
-	                This browser or document mode doesn't support canvas object
-        	        </canvas>
+                	<canvas id="canvas1" width="300" height="300">
+			loading...        	        
+			</canvas>
         	</div>
+	</div>	
 	</div>	
 
 	<div id='02' class='toprightContainer'>
-		2
-		<br />
-		<br />
-		<br />
-		<br />
-		<br />
-		<video width="427" height="240" autoplay="autoplay" loop> 
+	<div id='02inner' class='innerContainer'>
+		<video height="300" autoplay="autoplay" loop> 
 			<source src="MEDIA/To-be-continued_02_240p.mov" type="video/mp4" />
   			Your browser does not support the video tag.
 		</video>
-
+	</div>	
 	</div>	
 
 	<div id='03' class='bottomleftContainer'>
-		3
-		<img src="MEDIA/KuwaitNationalMuseum.gif" style="width:400px;">
+	<div id='04inner' class='innerContainer'>
+
+		<img src="MEDIA/KuwaitNationalMuseum.gif" style="width:300px;">
+	</div>	
 	</div>	
 
 	<div id='04' class='bottomrightContainer'>
-		4
+	<div id='04inner' class='innerContainer'>
 
         <!-- TIME -->
 
@@ -59,9 +57,9 @@ if ( ($live) || ($dev) ) {
 
                 <p id='serverTime'></p>
 
+	</div>	
         </div>
         </div>
-
 	</div>	
 
 
