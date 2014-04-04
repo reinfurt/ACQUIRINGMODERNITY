@@ -93,7 +93,7 @@ if ( ($live) || ($dev) ) {
 	?>
 	</div>
 
-	<div id='english' class='englishContainer'>
+	<div id='english' class='englishContainer comicsans'>
 
         <?php
         if ($l=="en") {

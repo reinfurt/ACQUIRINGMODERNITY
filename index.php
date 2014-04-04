@@ -33,7 +33,7 @@ if ( ($live) || ($dev) ) {
 
 	<div id='02' class="<?php echo ($l=='en') ? 'toprightContainer' : 'topleftContainer'; ?>">
 		<div id='02inner' class='innerContainer'>
-			<video height="240" width="427" autoplay="autoplay" loop style="margin-top:-120px;margin-left:-214px;"> 
+			<video height="240" width="427" autoplay="autoplay" loop muted style="margin-top:-120px;margin-left:-214px;"> 
 				<source src="MEDIA/To-be-continued_02_240p.mov" type="video/mp4" />
 	  			Your browser does not support the video tag.
 			</video>
@@ -50,7 +50,7 @@ if ( ($live) || ($dev) ) {
 		<?php
 		} else {
 		?>
-			<video height="240" width="427" autoplay="autoplay" loop style="margin-top:-120px;margin-left:-214px;"> 
+			<video height="240" width="427" autoplay="autoplay" loop muted style="margin-top:-120px;margin-left:-214px;"> 
 				<source src="MEDIA/To-be-continued_01_240p.mov" type="video/mp4" />
 	  			Your browser does not support the video tag.
 			</video>
