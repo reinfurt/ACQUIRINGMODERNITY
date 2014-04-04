@@ -47,11 +47,17 @@ a:active {
 
 /* Containers */
 
-.nameContainer {
+.englishContainer {
 	position: fixed;
-	width: 97%;
-	top: 0px;
+	top: 20px;
 	left: 20px;
+	z-index:99;
+	}
+
+.arabicContainer {
+	position: fixed;
+	top: 10px;
+	right: 20px;
 	z-index:99;
 	}
 	
@@ -89,11 +95,8 @@ a:active {
 		
 .innerContainer {
 	position: absolute;
-	width: 300px;
 	left: 50%;
 	top: 50%;
-	margin-top:-150px;
-	margin-left:-150px;
 	}
 
 .timeContainer {
@@ -153,5 +156,5 @@ a:active {
 	}
 
 .yellow {
-	color:#CC0;
+	color:#09C;
 	}
