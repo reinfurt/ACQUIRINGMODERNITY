@@ -26,6 +26,10 @@
 	$dev = $_REQUEST['dev'];
 	$dev = systemCookie("devCookie", $dev, 0);
 	// if (!$dev) die('Under construction . . .');
+	
+	// Alt for dev options
+	
+	$alt	 = $_REQUEST['alt'];
 
 	// Language
 
