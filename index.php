@@ -5,7 +5,7 @@
 <?php
 if ( ($live) || ($dev) ) {
 ?>
-			
+
 	<!--  MAIN  -->
 
 	<div id='01' class="<?php echo ($l=='en') ? 'topleftContainer' : 'toprightContainer'; ?>">
@@ -63,7 +63,7 @@ if ( ($live) || ($dev) ) {
 	<div id='04' class="<?php echo ($l=='en') ? 'bottomrightContainer' : 'bottomleftContainer'; ?> yellow">
 	<div id='04inner' class='innerContainer' style="margin-top:-30px;margin-left:-150px;">
 
-        <!-- TIME -->
+        <!-- TTIME -->
 
         <div id='timeWrapper' class='timeContainerWrapper'>
         <div id='time' class='timeContainer helvetica big'>

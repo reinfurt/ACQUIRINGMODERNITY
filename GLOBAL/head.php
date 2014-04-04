@@ -34,6 +34,7 @@
 	// Language
 
 	$l	 = $_REQUEST['l'];
+	if (!$l) $l = "ar";
 
 	$staging = $_REQUEST['staging'];
 	$sql    = "SELECT deck FROM objects WHERE objects.name1 LIKE 'Live';";
@@ -61,10 +62,6 @@
 </head>
 
 <body onload="init(); displayTime(); setInterval('displayTime()',1000);">
-
-<?php
-if ( ($live) || ($dev) ) {
-?>
 	
 	<!--  NAME  -->
 	
@@ -126,6 +123,10 @@ if ( ($live) || ($dev) ) {
 			</ul>
 		</div>
 	</div> 
+
+<?php
+if ( ($live) || ($dev) ) {
+?>
 
 <?php
 }
