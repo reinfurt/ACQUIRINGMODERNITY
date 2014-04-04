@@ -44,7 +44,7 @@ if ( ($live) || ($dev) ) {
 		<div id='04inner' class='innerContainer'>
 
                 <?php
-                if ($alt) {
+                if (!$alt) {
                 ?>
 			<img src="MEDIA/KuwaitNationalMuseum.gif" width=300px; style="margin-top:-150px;margin-left:-150px;"> 
 		<?php
