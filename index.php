@@ -43,14 +43,20 @@ if ( ($live) || ($dev) ) {
 	<div id='03' class="<?php echo ($l=='en') ? 'bottomleftContainer' : 'bottomrightContainer'; ?>">
 		<div id='04inner' class='innerContainer'>
 
+                <?php
+                if ($alt) {
+                ?>
 			<img src="MEDIA/KuwaitNationalMuseum.gif" width=300px; style="margin-top:-150px;margin-left:-150px;"> 
-
-<!--
+		<?php
+		} else {
+		?>
 			<video height="240" width="427" autoplay="autoplay" loop style="margin-top:-120px;margin-left:-214px;"> 
 				<source src="MEDIA/To-be-continued_01_240p.mov" type="video/mp4" />
 	  			Your browser does not support the video tag.
 			</video>
--->
+		<?php
+		}
+		?>
 		</div>	
 	</div>	
 
