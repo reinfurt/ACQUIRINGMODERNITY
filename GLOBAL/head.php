@@ -69,18 +69,18 @@
 	<?php 
 	if ($l=="ar") {
 	?>
-		<p dir="rtl" lang="AR" class="green">
+		<p dir="rtl" lang="AR" class="tahoma green">
 		<a href="index.php?l=ar">
 الحصول على الحداثة </br>
 		</a>
-<span style="color:#FFF;">
+<span style="color:#000;">
 مشاركة وطنية الكويت لعام 2014 البندقية العمارة بينالي
 </span>
 		</p>
 	<?php
 	} else {
 	?>
-		<p dir="rtl" lang="AR" class="green">
+		<p dir="rtl" lang="AR" class="tahoma green">
 		<a href="index.php?l=ar">
 الحصول على الحداثة 
 		</a>
@@ -90,7 +90,7 @@
 	?>
 	</div>
 
-	<div id='english' class='englishContainer comicsans'>
+	<div id='english' class='englishContainer tahoma'>
 
         <?php
         if ($l=="en") {
