@@ -15,7 +15,7 @@
 	$idFull = $id;
 	$id = $ids[count($ids) - 1];
 	$pageName = basename($_SERVER['PHP_SELF'], ".php");
-	$documentTitle = "الحصول على الحداثة";
+	$documentTitle = " اقتناء الحداثة";
 	// echo $pageName .  "?id=" . $id;
 	
 	// Live?
