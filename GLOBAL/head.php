@@ -71,18 +71,19 @@
 	?>
 		<p dir="rtl" lang="AR" class="tahoma green">
 		<a href="index.php?l=ar">
-الحصول على الحداثة </br>
+ اقتناء الحداثة
+		<br />
 		</a>
-<span style="color:#000;">
-مشاركة وطنية الكويت لعام 2014 البندقية العمارة بينالي
-</span>
+		<span style="color:#000;">
+ مشاركة الكويت في معرض العمارة الدولي الرابع عشر - بيينالي البندقية 
+		</span>
 		</p>
 	<?php
 	} else {
 	?>
 		<p dir="rtl" lang="AR" class="tahoma green">
 		<a href="index.php?l=ar">
-الحصول على الحداثة 
+ اقتناء الحداثة
 		</a>
 		</p>
 	<?php
@@ -96,7 +97,7 @@
         if ($l=="en") {
         ?>
 		<a href="index.php">Acquiring Modernity</a><br />
-		Kuwait national participation for 2014 La Biennale Architettura di Venezia<br /> 
+		Kuwait's Pavilion at the 14th International Architecture Exhibition of la Biennale di Venezia
 	<?php
 	} else {
 	?>
