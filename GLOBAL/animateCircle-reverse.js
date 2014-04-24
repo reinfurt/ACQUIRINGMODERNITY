@@ -17,7 +17,7 @@
 		grad.addColorStop(1, "green");
 		context.strokeStyle = grad;
                 counter = 0;
-                radius = 90;
+                radius = canvas.width/2.25;
                 frames = 60;
                 step = 2.0 * Math.PI / frames;
                 delay = 25;

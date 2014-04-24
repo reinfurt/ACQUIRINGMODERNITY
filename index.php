@@ -8,7 +8,15 @@ if ( ($live) || ($dev) ) {
 
 	<!--  MAIN  -->
 
-	<div id='01' class="<?php echo ($l=='en') ? 'topleftContainer' : 'toprightContainer'; ?>">
+	<div id='00' class="middleContainer">
+		<video height="480" width="853" autoplay="autoplay" loop muted style="margin-top:-240px;margin-left:-426px;"> 
+			<source src="MEDIA/To-be-continued_01_white_480p_low" type="video/mp4" />
+	  		Your browser does not support the video tag.
+		</video>
+	</div>	
+
+
+	<div id='01' class="<?php echo ($l=='en') ? 'bottomleftContainer' : 'bottomrightContainer'; ?>">
 		<div id='02inner' class='innerContainer'>
 
 	        <?php 
@@ -24,49 +32,20 @@ if ( ($live) || ($dev) ) {
 		?>
  	        	
 		<div>
-                		<canvas id="canvas1" width="300" height="300" style="margin-top:-150px;margin-left:-150px;">
+                		<canvas id="canvas1" width="200" height="200" style="margin-top:-100px;margin-left:-100px;">
 				loading...        	        
 				</canvas>
         		</div>
 		</div>	
 	</div>	
 
-	<div id='02' class="<?php echo ($l=='en') ? 'toprightContainer' : 'topleftContainer'; ?>">
-		<div id='02inner' class='innerContainer'>
-			<video height="240" width="427" autoplay="autoplay" loop muted style="margin-top:-120px;margin-left:-214px;"> 
-				<source src="MEDIA/To-be-continued_02_240p.mov" type="video/mp4" />
-	  			Your browser does not support the video tag.
-			</video>
-		</div>	
-	</div>	
-
-	<div id='03' class="<?php echo ($l=='en') ? 'bottomleftContainer' : 'bottomrightContainer'; ?>">
-		<div id='04inner' class='innerContainer'>
-
-                <?php
-                if (!$alt) {
-                ?>
-			<img src="MEDIA/KuwaitNationalMuseum.gif" width=300px; style="margin-top:-150px;margin-left:-150px;"> 
-		<?php
-		} else {
-		?>
-			<video height="240" width="427" autoplay="autoplay" loop muted style="margin-top:-120px;margin-left:-214px;"> 
-				<source src="MEDIA/To-be-continued_01_240p.mov" type="video/mp4" />
-	  			Your browser does not support the video tag.
-			</video>
-		<?php
-		}
-		?>
-		</div>	
-	</div>	
-
 	<div id='04' class="<?php echo ($l=='en') ? 'bottomrightContainer' : 'bottomleftContainer'; ?> yellow">
 	<div id='04inner' class='innerContainer' style="margin-top:-30px;margin-left:-150px;">
 
-        <!-- TTIME -->
+        <!-- TIME -->
 
         <div id='timeWrapper' class='timeContainerWrapper'>
-        <div id='time' class='timeContainer helvetica big'>
+        <div id='time' class='timeContainer helvetica'>
 
                 <script type="text/javascript">
                 <!--

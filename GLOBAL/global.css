@@ -69,6 +69,16 @@ a:active {
 	z-index:99;
 	}
 	
+.middleContainer {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+ 	/* margin-top: -240px; */
+	/* margin-left: -426px; */
+	width: 853px;
+	height: 480px;
+	}	
+
 .topleftContainer {
 	position: absolute;
 	top: 0px;
