@@ -15,32 +15,31 @@ if ( ($live) || ($dev) ) {
 		</video>
 	</div>	
 
-
-	<div id='01' class="<?php echo ($l=='en') ? 'bottomleftContainer' : 'bottomrightContainer'; ?>">
-		<div id='02inner' class='innerContainer'>
+	<div id='01' class="bottomrightContainer">
+		<div id='02inner' class='innerContainerRight'>
 
 	        <?php 
 		if ($l == "en") {
 		?>
-		<script type="text/javascript" src="GLOBAL/animateCircle.js"></script>
+		<script type="text/javascript" src="JS/animateCircle.js"></script>
 		<?php
 		} else {
 		?>
-		<script type="text/javascript" src="GLOBAL/animateCircle-reverse.js"></script>
+		<script type="text/javascript" src="JS/animateCircle-reverse.js"></script>
 		<?php
 		}
 		?>
  	        	
-		<div>
-                		<canvas id="canvas1" width="200" height="200" style="margin-top:-100px;margin-left:-100px;">
+			<div>
+                		<canvas id="canvas3" width="200" height="200">
 				loading...        	        
 				</canvas>
         		</div>
 		</div>	
 	</div>	
 
-	<div id='04' class="<?php echo ($l=='en') ? 'bottomrightContainer' : 'bottomleftContainer'; ?> yellow">
-	<div id='04inner' class='innerContainer' style="margin-top:-30px;margin-left:-150px;">
+	<div id='04' class="bottomleftContainer green">
+	<div id='04inner' class="innerContainerLeft"> 
 
         <!-- TIME -->
 
@@ -56,7 +55,7 @@ if ( ($live) || ($dev) ) {
                 var montharray = new Array("JAN","FEB","MAR","APR","MAY","JUN","JUL","AUG","SEP","OCT","NOV","DEC");
                 var serverdate = new Date(currenttime);
 
-                //-->
+                -->
                 </script>
 
                 <p id='serverTime'></p>
@@ -65,7 +64,6 @@ if ( ($live) || ($dev) ) {
         </div>
         </div>
 	</div>	
-
 
 		<?php
 		/*		

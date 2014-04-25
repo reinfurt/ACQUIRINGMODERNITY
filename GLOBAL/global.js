@@ -11,16 +11,18 @@ function displayTime() {
 		
 	serverdate.setSeconds(serverdate.getSeconds()+1);
 
-	var datestring = padlength(serverdate.getFullYear() + " " + montharray[serverdate.getMonth()] + " " + serverdate.getDate()) + " ";
+	// var datestring = padlength(serverdate.getFullYear() + " " + montharray[serverdate.getMonth()] + " " + serverdate.getDate()) + " ";
+	var datestring = padlength(serverdate.getFullYear() + "/" + serverdate.getMonth() + "/" + serverdate.getDate()) + " ";
 			
 	// convert to 12 hour
 			
 	var currentHours = padlength(serverdate.getHours());
-	var amPm = ( currentHours < 12 ) ? "AM" : "PM";
+	// var amPm = ( currentHours < 12 ) ? "AM" : "PM";
 	var currentHours = ( currentHours > 12 ) ? currentHours - 12 : currentHours;
-	currentHours = ( currentHours == 0 ) ? 12 : currentHours;
+	// currentHours = ( currentHours == 0 ) ? 12 : currentHours;
   		
-	var timestring = currentHours + ":" + padlength(serverdate.getMinutes()) + ":" + padlength(serverdate.getSeconds()) + " " + amPm;
+	// var timestring = currentHours + ":" + padlength(serverdate.getMinutes()) + ":" + padlength(serverdate.getSeconds()) + " " + amPm;
+	var timestring = currentHours + ":" + padlength(serverdate.getMinutes()) + ":" + padlength(serverdate.getSeconds());
 
 	document.getElementById("serverTime").innerHTML=datestring + " " + timestring;
 }

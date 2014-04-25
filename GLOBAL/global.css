@@ -111,10 +111,16 @@ a:active {
 	height: 50%;
 	}	
 		
-.innerContainer {
+.innerContainerLeft {
 	position: absolute;
-	left: 50%;
-	top: 50%;
+	left:20px;
+	bottom:48px;
+	}
+
+.innerContainerRight {
+	position: absolute;
+	right:10px;
+	bottom:10px;
 	}
 
 .timeContainer {
@@ -173,6 +179,6 @@ a:active {
 	color:#0C0;
 	}
 
-.yellow {
-	color:#09C;
+.green {
+	color:#0A0;
 	}

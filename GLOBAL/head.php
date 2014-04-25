@@ -59,10 +59,11 @@
 	<link rel="stylesheet" type="text/css" media="all" href="GLOBAL/global.css" />
 	<script type="text/javascript" src="GLOBAL/global.js"></script>
 	<!-- <script src="_Processing/processing-1.4.1.min.js"></script> -->
+	<script type="text/javascript" src="JS/animateEmoticon.js"></script>
 </head>
 
-<body onload="init(); displayTime(); setInterval('displayTime()',1000);">
-	
+<body onload="init(); initCircle(); displayTime(); setInterval('displayTime()',1000);">
+
 	<!--  NAME  -->
 	
 	<div id='arabic' class='arabicContainer'>
@@ -70,10 +71,7 @@
 	if ($l=="ar") {
 	?>
 		<p dir="rtl" lang="AR" class="tahoma green">
-		<a href="index.php?l=ar">
- اقتناء الحداثة
-		<br />
-		</a>
+		<a href="index.php?l=ar"><canvas id="canvas0" width="200" height="17"> اقتناء الحداثة</canvas></a><br />
 		<span style="color:#000;">
  مشاركة الكويت في معرض العمارة الدولي الرابع عشر - بيينالي البندقية 
 		</span>
@@ -81,10 +79,8 @@
 	<?php
 	} else {
 	?>
-		<p dir="rtl" lang="AR" class="tahoma green">
-		<a href="index.php?l=ar">
- اقتناء الحداثة
-		</a>
+		<p dir="rtl" lang="AR" class="tahoma green"> 
+		<a href="index.php?l=ar"><canvas id="canvas0" width="200" height="17"> اقتناء الحداثة</canvas></a><br />
 		</p>
 	<?php
 	} 
@@ -96,12 +92,12 @@
         <?php
         if ($l=="en") {
         ?>
-		<a href="index.php">Acquiring Modernity</a><br />
+		<a href="index.php?l=en"><canvas id="canvas1" width="200" height="17">Acquiring Modernity</canvas></a><br />
 		Kuwait's Pavilion at the 14th International Architecture Exhibition of la Biennale di Venezia
 	<?php
 	} else {
 	?>
-		<a href="index.php?l=en">Acquiring Modernity</a><br />
+		<a href="index.php?l=en"><canvas id="canvas1" width="200" height="17">Acquiring Modernity</canvas></a><br />
 	<?php
 	} 
 	?>
