@@ -33,7 +33,7 @@
 
 	$language = $_REQUEST['language'];
 	$language = systemCookie("languageCookie", $language, time()+60*60*24*30*12);
-
+	if (!$language) $language = "ar";
 	if ($language == "ar") $documentTitle = "اقتناء الحداثة";
 	if ($language == "en") $documentTitle = "Acquiring Modernity";
 
