@@ -6,8 +6,7 @@
  //  Navigation  //
 //////////////////
 
-function displayNavigation( $path = "0", $limit = null, $selection = null, $pageName = "main", $stub = FALSE, $breadcrumbsMode = FALSE, $multiColumn = null ) {
-
+function displayNavigation( $path = "0", $limit = null, $selection = null, $pageName = "main", $stub = FALSE, $breadcrumbsMode = FALSE, $multiColumn = null, $menuLanguage = "en") {
 
 	//  Handle recursion 
 
@@ -64,7 +63,18 @@ function displayNavigation( $path = "0", $limit = null, $selection = null, $page
 		
 	if ( (substr($name, 0, 1) != "." && substr($name, 0, 1) != "_") ) {
 
-		$html  = "\n		<div class='menuItemContainer ";
+		// Kuwait-specific hack
+		
+		if ($menuLanguage == "ar") {
+		
+			$html  = "\n		<div dir='rtl' lang='AR' ";
+
+		} else {
+		
+			$html  = "\n		<div ";				
+		}
+
+		$html .= "<div class='menuItemContainer ";
 		$html .= ($selected || $final == 0) ? "active" : "static";
 		$html .= "'>";
 		$html .= "<a href='";
@@ -125,7 +135,7 @@ function displayNavigation( $path = "0", $limit = null, $selection = null, $page
 
 				$tmp = $path .",". $row["objectsId"];
 				$limitTemp = ($selected) ? $limit : $limitNext;
-				displayNavigation($tmp, $limitTemp , $selection, $pageName, $stub, $breadcrumbsMode, $multiColumn);
+				displayNavigation($tmp, $limitTemp , $selection, $pageName, $stub, $breadcrumbsMode, $multiColumn, $menuLanguage);
 			}
 			
 			if ( $multiColumn && $depth!=0 ) echo "</div>";

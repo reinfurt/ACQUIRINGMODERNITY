@@ -16,7 +16,7 @@
 
 			thisCanvas[i] = document.getElementById("canvas"+i);
 			thisContext[i] = thisCanvas[i].getContext("2d");
-			thisContext[i].fillStyle = "#FF0000";
+			thisContext[i].fillStyle = "#0000FF";
 			thisContext[i].font = "16px Tahoma";
 			thisContext[i].textAlign = "left";
 			thisContext[i].textBaseline = "middle";
@@ -25,86 +25,86 @@
 
 		// hack
 		thisContext[0].textAlign = "right";
-		thisContext[0].fillStyle = "#0000FF";
+		thisContext[0].fillStyle = "#FF0000";
 
 		// init array of arrays per canvas animation 
 
 		messages[0] = 	[
-				"",
-				"ا",
-				"اق",								
-				"اقت",
-				"اقتن",
-				"اقتنا",
-				"اقتناء ",
-				"اقتناء ا",
-				"اقتناء ال",
-				"اقتناء الح",
-				"اقتناء الحد",
-				"اقتناء الحدا",
-				"اقتناء الحداث",
+				"_",
+				"ا_",
+				"اق_",								
+				"اقت_",
+				"اقتن_",
+				"اقتنا_",
+				"اقتناء _",
+				"اقتناء ا_",
+				"اقتناء ال_",
+				"اقتناء الح_",
+				"اقتناء الحد_",
+				"اقتناء الحدا_",
+				"اقتناء الحداث_",
+				"اقتناء الحداثة_",
 				"اقتناء الحداثة",
+				"اقتناء الحداثة_",
 				"اقتناء الحداثة",
+				"اقتناء الحداثة_",
 				"اقتناء الحداثة",
+				"اقتناء الحداثة_",
 				"اقتناء الحداثة",
+				"اقتناء الحداثة_",
 				"اقتناء الحداثة",
+				"اقتناء الحداثة_",
 				"اقتناء الحداثة",
+				"اقتناء الحداثة_",
 				"اقتناء الحداثة",
+				"اقتناء الحداثة_",
 				"اقتناء الحداثة",
+				"اقتناء الحداثة_",
 				"اقتناء الحداثة",
-				"اقتناء الحداثة",
-				"اقتناء الحداثة",
-				"اقتناء الحداثة",
-				"اقتناء الحداثة",
-				"اقتناء الحداثة",
-				"اقتناء الحداثة",
-				"اقتناء الحداثة",
-				"اقتناء الحداثة",
-				"اقتناء الحداثة",
-				"اقتناء الحداثة"
+				"اقتناء الحداثة_"
 				];
 
 		thisDelay[0] = 200;
 
 		messages[1] = 	[
-				"",
-				"A",
-				"Ac",
-				"Acq",
-				"Acqu",
-				"Acqui",
-				"Acquir",
-				"Acquiri",
-				"Acquirin",
-				"Acquiring",
-				"Acquiring ",
-				"Acquiring M",
-				"Acquiring Mo",
-				"Acquiring Mod",
-				"Acquiring Mode",
-				"Acquiring Moder",
-				"Acquiring Modern",
-				"Acquiring Moderni",
-				"Acquiring Modernit",
+				"_",
+				"A_",
+				"Ac_",
+				"Acq_",
+				"Acqu_",
+				"Acqui_",
+				"Acquir_",
+				"Acquiri_",
+				"Acquirin_",
+				"Acquiring_",
+				"Acquiring _",
+				"Acquiring M_",
+				"Acquiring Mo_",
+				"Acquiring Mod_",
+				"Acquiring Mode_",
+				"Acquiring Moder_",
+				"Acquiring Modern_",
+				"Acquiring Moderni_",
+				"Acquiring Modernit_",
+				"Acquiring Modernity_",
 				"Acquiring Modernity",
+				"Acquiring Modernity_",
 				"Acquiring Modernity",
+				"Acquiring Modernity_",
 				"Acquiring Modernity",
+				"Acquiring Modernity_",
 				"Acquiring Modernity",
+				"Acquiring Modernity_",
 				"Acquiring Modernity",
+				"Acquiring Modernity_",
 				"Acquiring Modernity",
+				"Acquiring Modernity_",
 				"Acquiring Modernity",
+				"Acquiring Modernity_",
 				"Acquiring Modernity",
+				"Acquiring Modernity_",
 				"Acquiring Modernity",
-				"Acquiring Modernity",
-				"Acquiring Modernity",
-				"Acquiring Modernity",
-				"Acquiring Modernity",
-				"Acquiring Modernity",
-				"Acquiring Modernity",
-				"Acquiring Modernity",
-				"Acquiring Modernity",
-				"Acquiring Modernity",
-				"Acquiring Modernity"
+				"Acquiring Modernity_"
 				];
 
 		thisDelay[1] = 168.421;

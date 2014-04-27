@@ -15,8 +15,6 @@
 	$idFull = $id;
 	$id = $ids[count($ids) - 1];
 	$pageName = basename($_SERVER['PHP_SELF'], ".php");
-	$documentTitle = " اقتناء الحداثة";
-	// echo $pageName .  "?id=" . $id;
 	
 	// Live?
 	
@@ -29,12 +27,15 @@
 	
 	// Alt for dev options
 	
-	$alt	 = $_REQUEST['alt'];
+	$alt = $_REQUEST['alt'];
 
 	// Language
 
-	$l	 = $_REQUEST['l'];
-	if (!$l) $l = "ar";
+	$language = $_REQUEST['language'];
+	$language = systemCookie("languageCookie", $language, time()+60*60*24*30*12);
+
+	if ($language == "ar") $documentTitle = "اقتناء الحداثة";
+	if ($language == "en") $documentTitle = "Acquiring Modernity";
 
 	$staging = $_REQUEST['staging'];
 	$sql    = "SELECT deck FROM objects WHERE objects.name1 LIKE 'Live';";
@@ -45,7 +46,6 @@
 	
 	echo "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n"; 
 ?>
-
 
 
 <!DOCTYPE html PUBLIC "-//W3C//Dtd XHTML 1.0 Transitional//EN" "http://www.w3.org/tr/xhtml1/Dtd/xhtml1-transitional.dtd">
@@ -66,79 +66,55 @@
 
 	<!--  NAME  -->
 	
-	<div id='arabic' class='arabicContainer'>
-	<?php 
-	if ($l=="ar") {
-	?>
-		<p dir="rtl" lang="AR" class="tahoma green">
-		<a href="index.php?l=ar"><canvas id="canvas0" width="200" height="17"> اقتناء الحداثة</canvas></a><br />
-		<span style="color:#000;">
- مشاركة الكويت في معرض العمارة الدولي الرابع عشر - بيينالي البندقية 
-		</span>
-		</p>
-	<?php
-	} else {
-	?>
-		<p dir="rtl" lang="AR" class="tahoma green"> 
-		<a href="index.php?l=ar"><canvas id="canvas0" width="200" height="17"> اقتناء الحداثة</canvas></a><br />
-		</p>
-	<?php
-	} 
-	?>
+	<div id='arabic' class='arabicContainer tahoma' dir="rtl" lang="AR">
+		<a href="index.php?language=ar"><canvas id="canvas0" width="200" height="17"> اقتناء الحداثة</canvas></a><br />
+		<?php 
+		if ($language=="ar") {
+		?>
+		مشاركة الكويت في معرض العمارة الدولي الرابع عشر - بيينالي البندقية 
+		<?php
+		} 
+		?>
 	</div>
 
 	<div id='english' class='englishContainer tahoma'>
-
-        <?php
-        if ($l=="en") {
-        ?>
-		<a href="index.php?l=en"><canvas id="canvas1" width="200" height="17">Acquiring Modernity</canvas></a><br />
+		<a href="index.php?language=en"><canvas id="canvas1" width="200" height="17">Acquiring Modernity</canvas></a><br />
+        	<?php
+	        if ($language=="en") {
+        	?>		
 		Kuwait's Pavilion at the 14th International Architecture Exhibition of la Biennale di Venezia
-	<?php
-	} else {
-	?>
-		<a href="index.php?l=en"><canvas id="canvas1" width="200" height="17">Acquiring Modernity</canvas></a><br />
-	<?php
-	} 
-	?>
+		<?php
+		} 
+		?>
+	</p>
+	</div>
+
+
+	<!-- MENU -->
+
+	<div id='nav' class='<?php echo ($language == "en") ? "englishMenuContainer" : "arabicMenuContainer" ?> tahoma'>
 	
-		<div id='nav' class='helvetica'>
-			<ul>		
-				<?php	
-				/*	
-					$path = "0";		// hard-coded hack for "+ Menu" branch
-					$limit = 1;
-					$selection = $idFull;
-					$linkPageName = $pageName; 
-					$breadcrumbsMode = FALSE;
-					$multiColumn = 20;	// used to indent menu?
-					// $stub = TRUE;
-					// if (!$breadcrumbsMode) ($id) ? $breadcrumbsMode = TRUE : $breadcrumbsMode = FALSE;
-					displayNavigation($path, $limit, $selection, $linkPageName, $stub, $breadcrumbsMode, $multiColumn);
-				*/
-				?>	
-			</ul>
-		</div>
-	</div> 
+                <p dir="rtl" lang="AR" class="tahoma green">
 
-<?php
-if ( ($live) || ($dev) ) {
-?>
+		<ul>		
+			<?php	
+				if ( $language == "en" ) $path = "14";
+				if ( $language == "ar" ) $path = "15";			
+				$limit = 1;
+				$selection = $idFull;
+				// $linkPageName = $pageName; 
+				$linkPageName = "detail";			// probably want to fix this and set using O-R-G URL field 
+				$breadcrumbsMode = FALSE;
+				$multiColumn = 0;
+				$stub = FALSE;
+				$breadcrumbsMode = FALSE;
+				$thisLanguage = $language;
+				if (!$breadcrumbsMode) ($id) ? $breadcrumbsMode = TRUE : $breadcrumbsMode = FALSE;
 
-<?php
-}
-?>
+				displayNavigation($path, $limit, $selection, $linkPageName, $stub, $breadcrumbsMode, $multiColumn, $thisLanguage);
+			?>	
+		</ul>
+	</p>
+	</div>
 
-
-<?php 
-
-	// Label
-	
-	$html  = "<div id='badge' class='labelContainer'>";
-	$html .= "<a href='index.php'><img src='MEDIA/logo.jpg' style='width: 100%;' alt='label' /></a>";		
-	$html .= "</div>";
-	
-	//echo $html;
-			
-?>
 

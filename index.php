@@ -7,7 +7,7 @@ if ( ($live) || ($dev) ) {
 ?>
 
 	<!--  MAIN  -->
-
+	
 	<div id='00' class="middleContainer">
 		<video height="480" width="853" autoplay="autoplay" loop muted style="margin-top:-240px;margin-left:-426px;"> 
 			<source src="MEDIA/To-be-continued_01_white_480p_low.mov" type="video/mp4" />
@@ -15,59 +15,8 @@ if ( ($live) || ($dev) ) {
 		</video>
 	</div>	
 
-	<div id='01' class="bottomrightContainer">
-		<div id='02inner' class='innerContainerRight'>
-
-	        <?php 
-		if ($l == "en") {
-		?>
-		<script type="text/javascript" src="JS/animateCircle.js"></script>
 		<?php
-		} else {
-		?>
-		<script type="text/javascript" src="JS/animateCircle-reverse.js"></script>
-		<?php
-		}
-		?>
- 	        	
-			<div>
-                		<canvas id="canvas3" width="200" height="200">
-				loading...        	        
-				</canvas>
-        		</div>
-		</div>	
-	</div>	
-
-	<div id='04' class="bottomleftContainer green">
-	<div id='04inner' class="innerContainerLeft"> 
-
-        <!-- TIME -->
-
-        <div id='timeWrapper' class='timeContainerWrapper'>
-        <div id='time' class='timeContainer helvetica'>
-
-                <script type="text/javascript">
-                <!--
-
-                // Init clock
-
-                var currenttime = '<?php echo date("F d, Y H:i:s", time());?>';
-                var montharray = new Array("JAN","FEB","MAR","APR","MAY","JUN","JUL","AUG","SEP","OCT","NOV","DEC");
-                var serverdate = new Date(currenttime);
-
-                -->
-                </script>
-
-                <p id='serverTime'></p>
-
-	</div>	
-        </div>
-        </div>
-	</div>	
-
-		<?php
-		/*		
-		
+		/*
 			// Query uses LEFT JOIN and multiple selection criteria to get objects with and without media from Front Page and News and return these in randomly sequenced rows . . . returns NULL if no media object attached to record
 
 			$returns = rand(3,8);			
@@ -105,10 +54,10 @@ if ( ($live) || ($dev) ) {
 				$html .= "</a>";
 				echo $html;		
 			}
-		} 
-		*/
+		}
+		*/ 
 		?>
-
+	
 <?php
 }
 ?>
