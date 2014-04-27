@@ -139,6 +139,13 @@ a:active {
 	height: 50%;
 	}	
 		
+.innerContainerCentered {
+	position: absolute;
+	left:35%;
+	top:50%;
+	width:50%;
+	}
+
 .innerContainerLeft {
 	position: absolute;
 	left:20px;

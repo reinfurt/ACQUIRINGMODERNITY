@@ -15,12 +15,13 @@ if ( ($live) || ($dev) ) {
                 <script type="text/javascript" src="JS/animateCircle-reverse.js"></script>
                 <?php
                 }
-                ?>
-
+                ?>	
                         <div>
+				<a href="project.php">
                                 <canvas id="canvas3" width="200" height="200">
-                                loading...
-                                </canvas>
+				loading...
+        	                </canvas>
+				</a>
                         </div>
                 </div>
         </div>
