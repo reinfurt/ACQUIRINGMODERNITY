@@ -2,9 +2,7 @@
 if ( ($live) || ($dev) ) {
 ?>
 
-        <div id='01' class="bottomrightContainer">
-                <div id='02inner' class='innerContainerRight'>
-
+        <div id='bottomrightcorner' class="bottomrightcornerContainer">
                 <?php
                 if ($language == "en") {
                 ?>
@@ -16,42 +14,31 @@ if ( ($live) || ($dev) ) {
                 <?php
                 }
                 ?>	
-                        <div>
-				<a href="project.php">
-                                <canvas id="canvas3" width="200" height="200">
+		<div>
+			<a href="project.php">
+                        	<canvas id="canvas3" width="200" height="200">
 				loading...
-        	                </canvas>
-				</a>
-                        </div>
-                </div>
+        	        	</canvas>
+			</a>
+		</div>
         </div>
 
-        <div id='04' class="bottomleftContainer green">
-        <div id='04inner' class="innerContainerLeft">
+        <div id='bottomleftcorner' class="bottomleftcornerContainer green">
+        	<div id='time' class='timeContainer helvetica'>
+                	<script type="text/javascript">
+	                <!--
 
-        <!-- TIME -->
+        	        // Init clock
 
-        <div id='timeWrapper' class='timeContainerWrapper'>
-        <div id='time' class='timeContainer helvetica'>
-
-                <script type="text/javascript">
-                <!--
-
-                // Init clock
-
-                var currenttime = '<?php echo date("F d, Y H:i:s", time());?>';
-                var montharray = new
+                	var currenttime = '<?php echo date("F d, Y H:i:s", time());?>';
+	                var montharray = new
 Array("JAN","FEB","MAR","APR","MAY","JUN","JUL","AUG","SEP","OCT","NOV","DEC");
-                var serverdate = new Date(currenttime);
+        	        var serverdate = new Date(currenttime);
 
-                -->
-                </script>
-
-                <p id='serverTime'></p>
-
-        </div>
-        </div>
-        </div>
+                	-->
+	                </script>
+        	        <p id='serverTime'></p>
+	        </div>
         </div>
 
 <?php

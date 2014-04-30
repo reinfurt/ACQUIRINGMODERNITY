@@ -86,40 +86,4 @@
 		<?php
 		} 
 		?>
-	</p>
 	</div>
-
-	<?php 
-	if ($dev) {
-	?>
-
-	<!-- MENU -->
-
-	<div id='nav' class='<?php echo ($language == "en") ? "englishMenuContainer" : "arabicMenuContainer" ?> tahoma'>
-	
-                <p dir="rtl" lang="AR" class="tahoma green">
-
-		<ul>		
-			<?php	
-				if ( $language == "en" ) $path = "14";
-				if ( $language == "ar" ) $path = "15";			
-				$limit = 1;
-				$selection = $idFull;
-				// $linkPageName = $pageName; 
-				$linkPageName = "detail";			// probably want to fix this and set using O-R-G URL field 
-				$breadcrumbsMode = FALSE;
-				$multiColumn = 0;
-				$stub = FALSE;
-				$breadcrumbsMode = FALSE;
-				$thisLanguage = $language;
-				if (!$breadcrumbsMode) ($id) ? $breadcrumbsMode = TRUE : $breadcrumbsMode = FALSE;
-
-				displayNavigation($path, $limit, $selection, $linkPageName, $stub, $breadcrumbsMode, $multiColumn, $thisLanguage);
-			?>	
-		</ul>
-	</p>
-	</div>
-
-	<?php 
-	}
-	?>

@@ -69,30 +69,42 @@ a:active {
 	z-index:99;
 	}
 
-.englishMenuContainer {
-	position: fixed;
+.englishMainContainer {
+	/* wraps menu, left, right */
+	position: absolute;
 	top: 42px;
+	left: 0px;
+	width: 98%;
+	}	
+
+.arabicMainContainer {
+	/* wraps menu, left, right */
+	position: absolute;
+	top: 42px;
+	right: 0px;
+	width: 98%;
+	}	
+
+.englishMenuContainer {
+	position: relative;
 	left: 20px;
 	z-index: 99;
 	}
 
 .arabicMenuContainer {
-	position: fixed;
-	top: 42px;
+	position: relative;
 	right: 20px;
 	z-index: 99;
-	}
-	
+	}	
+
 .leftContainer {
 	position: absolute;
-	top: 80px;
 	left: 20px;
 	width: 50%;
 	}	
 
 .rightContainer {
 	position: absolute;
-	top: 80px;
 	right: 20px;
 	width: 50%;
 	}	
@@ -124,7 +136,7 @@ a:active {
 	}	
 
 .bottomleftContainer {
-	position: fixed;
+	position: absolute;
 	top: 50%;
 	left: 0px;
 	width: 50%;
@@ -132,13 +144,25 @@ a:active {
 	}	
 
 .bottomrightContainer {
-	position: fixed;
+	position: absolute;
 	top: 50%;
-	left: 50%;
+	right: 0px;
 	width: 50%;
 	height: 50%;
 	}	
 		
+.bottomleftcornerContainer {
+	position: fixed;
+	left: 20px;
+	bottom: 48px;
+	}	
+
+.bottomrightcornerContainer {
+	position: fixed;
+	right: 20px;
+	bottom: 10px;
+	}	
+
 .innerContainerCentered {
 	position: absolute;
 	left:35%;
@@ -146,28 +170,12 @@ a:active {
 	width:50%;
 	}
 
-.innerContainerLeft {
-	position: absolute;
-	left:20px;
-	bottom:48px;
-	}
-
-.innerContainerRight {
-	position: absolute;
-	right:10px;
-	bottom:10px;
-	}
-
 .timeContainer {
-	position: absolute;
+	position: fixed;
 	text-align: left;
 	height: 36px;
-	/* background-color: #FFF; */
-	}
-
-.timeContainerWrapper {
-	position: absolute;
 	width: 300px;
+	/* background-color: #FFA; */
 	}
 
 .imageContainer {
