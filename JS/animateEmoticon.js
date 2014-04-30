@@ -17,7 +17,7 @@
 			thisCanvas[i] = document.getElementById("canvas"+i);
 			thisContext[i] = thisCanvas[i].getContext("2d");
 			thisContext[i].fillStyle = "#0000FF";
-			thisContext[i].font = "16px Tahoma";
+			thisContext[i].font = "15px Tahoma";
 			thisContext[i].textAlign = "left";
 			thisContext[i].textBaseline = "middle";
 			thisCounter[i] = 0;

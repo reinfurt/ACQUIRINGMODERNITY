@@ -26,9 +26,21 @@ function displayTime() {
 
 	document.getElementById("serverTime").innerHTML=datestring + " " + timestring;
 }
-		
-		
+	
 
+// expand image (toggle)
+
+function expandImage(thisId,originalSize,newSize) {
+
+	if (document.getElementById(thisId).style.padding == originalSize) {
+
+		document.getElementById(thisId).style.padding = newSize;		// set
+	} else {
+
+		document.getElementById(thisId).style.padding = originalSize;		// reset
+	}
+	return true;
+}
 
 
 //  Force getElementById to work

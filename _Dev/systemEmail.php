@@ -7,9 +7,9 @@
  //  Email Builder  //
 /////////////////////
 
-function orgEmail($sender, $recipient, $subject, $message) {
+function systemEmail($sender, $recipient, $subject, $message) {
 
-	$sender .= "";
+	$sender .= "@cavs.mit.edu";
 
 
 	//  Address Headers

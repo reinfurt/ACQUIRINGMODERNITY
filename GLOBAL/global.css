@@ -1,7 +1,7 @@
 /* Document */
 
 body {
-	font-size: 16px;
+	font-size: 15px;
 	line-height: 20px;
 	color: #000;
 	background-color: #FFF;
@@ -52,6 +52,17 @@ a:active {
         line-height: 26px;
         }
 
+.caption {
+        font-size: 12px;
+        line-height: 14px;
+        }
+
+.footnote {
+        font-size: 12px;
+        line-height: 14px; 	  
+	vertical-align: top;
+        }
+
 
 /* Containers */
 
@@ -59,6 +70,7 @@ a:active {
 	position: fixed;
 	top: 20px;
 	left: 20px;
+	white-space: nowrap;
 	z-index:99;
 	}
 
@@ -66,13 +78,14 @@ a:active {
 	position: fixed;
 	top: 20px;
 	right: 20px;
+	white-space: nowrap;
 	z-index:99;
 	}
 
 .englishMainContainer {
 	/* wraps menu, left, right */
 	position: absolute;
-	top: 42px;
+	top: 40px;
 	left: 0px;
 	width: 98%;
 	}	
@@ -80,7 +93,7 @@ a:active {
 .arabicMainContainer {
 	/* wraps menu, left, right */
 	position: absolute;
-	top: 42px;
+	top: 40px;
 	right: 0px;
 	width: 98%;
 	}	
@@ -100,13 +113,14 @@ a:active {
 .leftContainer {
 	position: absolute;
 	left: 20px;
-	width: 50%;
+	width: 46%;
+	padding-bottom:40px;
 	}	
 
 .rightContainer {
 	position: absolute;
 	right: 20px;
-	width: 50%;
+	width: 46%;
 	}	
 
 .middleContainer {
@@ -179,10 +193,11 @@ a:active {
 	}
 
 .imageContainer {
-	padding-top: 100px;
-	padding-right: 100px;
-	padding-bottom: 100px;
-	padding-left: 140px;
+	padding: 100px;
+	}
+
+.captionContainer {
+	padding-top: 10px;
 	}
 	
 	
@@ -197,7 +212,7 @@ a:active {
 	}
 
 .active a:hover {
-	color:#FC0;
+	color:#00F;
 	}
 
 .active a:active {
@@ -209,7 +224,7 @@ a:active {
 	}
 	
 .static a {
-	color:#FC0;
+	/* color:#FC0; */
 	}
 
 .static a:hover {
@@ -223,14 +238,26 @@ a:active {
 
 /* Utility */
 
+.red{
+	color:#C00;
+	}
+
+.red a {
+	color:#F00;
+	}
+
 .green{
-	color:#0C0;
+	color:#0A0;
 	}
 
 .green a {
 	color:#0C0;
 	}
 
-.green {
-	color:#0A0;
+.blue{
+	color:#00A;
+	}
+
+.blue a {
+	color:#00F;
 	}

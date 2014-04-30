@@ -8,7 +8,7 @@ require_once("GLOBAL/head.php");
 
         <!-- MENU -->
 
-        <div id='menu' class='<?php echo ($language == "en") ? "englishMenuContainer" : "arabicMenuContainer" ?> tahoma'>
+        <div id='menu' class='<?php echo ($language == "en") ? "englishMenuContainer blue " : "arabicMenuContainer red " ?> tahoma'>
 
                 <p dir="rtl" lang="AR" class="tahoma green">
 
@@ -47,7 +47,11 @@ require_once("GLOBAL/head.php");
 			$deck = $myrow["deck"];
 			$body = $myrow["body"];
 
-			$html = $body;
+			// replace [ and ] with footnote style
+
+			$bodyParsed = str_replace("]", "</span>", str_replace("[", "<span class='footnote'>", $body));
+
+			$html = $bodyParsed;
                         echo nl2br($html);
 		?>
 	</div>
@@ -67,19 +71,20 @@ wires, media WHERE objects.id = $id AND wires.toid = objects.id AND media.object
 '1' ORDER BY media.rank;";
 			$result =  MYSQL_QUERY($sql);
 			$html = "";
-
+			$i = 0;
 
 			while ( $myrow  =  MYSQL_FETCH_ARRAY($result) ) {
-						
+							
 				$mediaFile = "MEDIA/". str_pad($myrow["mediaId"], 5, "0", STR_PAD_LEFT) .".". $myrow["type"];
 				$mediaCaption = strip_tags($myrow["caption"]);
 				$mediaStyle = "width: 100%;";
-				$html .= "<div class = 'imageContainer'>";
+				$html .= "<div id='image".$i."' class = 'imageContainer' onclick='expandImage(\"image".$i."\", \"100px\", \"0px\");' style='padding:100px;'>";
 				$html .= "\n	". displayMedia($mediaFile, $mediaCaption, $mediaStyle);
 				$html .= "<div class = 'captionContainer caption'>";
 				$html .= $mediaCaption . "<br /><br />";
 				$html .= "</div>";
 				$html .= "</div>";
+				$i++;
 			}
 	
 			echo nl2br($html);

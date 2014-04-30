@@ -12,7 +12,7 @@ if ( ($live) || ($dev) ) {
 
         <!-- MENU -->
 
-        <div id='menu' class='<?php echo ($language == "en") ? "englishMenuContainer" : "arabicMenuContainer" ?> tahoma'>
+        <div id='menu' class='<?php echo ($language == "en") ? "englishMenuContainer blue " : "arabicMenuContainer red " ?> tahoma'>
 
                 <p dir="rtl" lang="AR" class="tahoma green">
 
@@ -48,7 +48,7 @@ if ( ($live) || ($dev) ) {
 		</video>
 	</div>	
 	-->
-	<div id='00' class="middleContainer" style="margin-top:-300px;margin-left:-350px;">
+	<div id='00' class="middleContainer" style="margin-top:0px;margin-left:-350px;">
 		<!-- <img src="MEDIA/KuwaitNationalMuseum.gif"> --> 
 		<img src="MEDIA/00001.jpg" width=800>
 	</div>	

@@ -9,7 +9,7 @@
 
 function systemEmail($sender, $recipient, $subject, $message) {
 
-	$sender .= "@cavs.mit.edu";
+	$sender .= "";
 
 
 	//  Address Headers
