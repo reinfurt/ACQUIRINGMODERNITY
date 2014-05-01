@@ -3,7 +3,7 @@
 ?>
 
 <?php
-if ( $dev ) {
+if ( ($dev) || ($live) ) {
 ?>
 
 
@@ -22,10 +22,10 @@ if ( $dev ) {
 		<img src="MEDIA/00001.jpg" width=800>
 	</div>	
 	-->
-	<div id='00' class="middleContainer" style="margin-top:-320px; margin-left:-450px;">
+	<div id='00' class="middleContainer" style="margin-top:-340px; margin-left:-425px;">
 		<!-- <img src="MEDIA/Kuwait-National-Museum-build" width=900> -->
 		<!-- <img src="MEDIA/Kuwait-National-Museum-build-inverse-pattern.gif" width=900> -->
-		<img src="MEDIA/00017.jpg" width=900>
+		<img src="MEDIA/00017.jpg" width=850>
 	</div>	
 
 
