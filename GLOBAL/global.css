@@ -8,12 +8,12 @@ body {
 	}
 
 a:link {	
-	color: #00F; 
+	color: #0CF; 
 	text-decoration: none; 
 	}
 
 a:visited {
-	color: #00F; 
+	color: #0CF; 
 	}
 
 a:hover {
@@ -256,11 +256,11 @@ a:active {
 /* Utility */
 
 .red{
-	color:#F00;
+	color:#F0F;
 	}
 
 .red a {
-	color:#F00;
+	color:#F0F;
 	}
 
 .green{
@@ -272,10 +272,10 @@ a:active {
 	}
 
 .blue{
-	color:#00F;
+	color:#0CF;
 	}
 
 .blue a {
-	color:#00F;
+	color:#0CF;
 	}
 

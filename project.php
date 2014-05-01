@@ -8,9 +8,9 @@ require_once("GLOBAL/head.php");
 
         <!-- MENU -->
 
-        <div id='menu' class='<?php echo ($language == "en") ? "englishMenuContainer" : "arabicMenuContainer" ?> tahoma'>
+        <div id='menu' class='<?php echo ($language == "en") ? "englishMenuContainer blue" : "arabicMenuContainer red" ?> tahoma'>
 
-                <p dir="rtl" lang="AR" class="tahoma green">
+                <p dir="rtl" lang="AR">
 
                 <ul>
                         <?php
@@ -46,7 +46,8 @@ require_once("GLOBAL/head.php");
 
         <!--  ARABIC  -->
          
-        <div id="I" class="bottomrightContainer courier medium" dir="rtl" lang="AR">
+        <div id="I" class="bottomrightContainer courier medium red" dir="rtl" 
+lang="AR">
                 <div id="02inner" class="innerContainerCenteredArabic">
                         <a href="detail.php?id=2,9">I. 
 الثقافة والإدارة
@@ -54,7 +55,8 @@ require_once("GLOBAL/head.php");
                 </div>
         </div>
 
-        <div id="II" class="toprightContainer courier medium" dir="rtl" lang="AR">
+        <div id="II" class="toprightContainer courier medium red" dir="rtl" 
+lang="AR">
                 <div id="02inner" class="innerContainerCenteredArabic">
                         <a href="detail.php?id=2,10">II. 
 أرض الكويت
@@ -62,7 +64,8 @@ require_once("GLOBAL/head.php");
                 </div>
         </div>
 
-        <div id="III" class="topleftContainer courier medium" dir="rtl" lang="AR">
+        <div id="III" class="topleftContainer courier medium red" dir="rtl" 
+lang="AR">
                 <div id="02inner" class="innerContainerCenteredArabic">
                         <a href="detail.php?id=2,11">III. 
 الإنسان الكويتي
@@ -70,7 +73,8 @@ require_once("GLOBAL/head.php");
                 </div>
         </div>
 
-        <div id="IV" class="bottomleftContainer courier medium" dir="rtl" lang="AR">
+        <div id="IV" class="bottomleftContainer courier medium red" dir="rtl" 
+lang="AR">
                 <div id="02inner" class="innerContainerCenteredArabic">
                         <a href="detail.php?id=2,12">IV. 
 كويت اليوم والغد

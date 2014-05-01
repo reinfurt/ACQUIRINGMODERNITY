@@ -12,8 +12,8 @@
                 context.fillStyle = "white";
                 context.lineWidth = 6;
 		var grad = context.createLinearGradient(50, 50, 150, 150);
-		grad.addColorStop(0, "#F00");
-		grad.addColorStop(1, "#00F");
+		grad.addColorStop(0, "#F0F");
+		grad.addColorStop(1, "#0CF");
 		context.strokeStyle = grad;
                 counter = 0;
                 radius = canvas.width/2.25;
