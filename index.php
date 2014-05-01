@@ -3,8 +3,30 @@
 ?>
 
 <?php
-if ( ($live) || ($dev) ) {
+if ( $dev ) {
 ?>
+
+
+	<!-- MIDDLE -->
+
+	<!--
+	<div id='00' class="middleContainer">
+		<video height="480" width="853" autoplay="autoplay" loop muted style="margin-top:-240px;margin-left:-426px;"> 
+			<source src="MEDIA/To-be-continued_01_white_480p_low.mov" type="video/mp4" />
+	  		Your browser does not support the video tag.
+		</video>
+	</div>	
+	-->
+	<!--
+	<div id='00' class="middleContainer" style="margin-top:0px;margin-left:-350px;">
+		<img src="MEDIA/00001.jpg" width=800>
+	</div>	
+	-->
+	<div id='00' class="middleContainer" style="margin-top:-320px; margin-left:-450px;">
+		<!-- <img src="MEDIA/Kuwait-National-Museum-build" width=900> -->
+		<img src="MEDIA/Kuwait-National-Museum-build-inverse-pattern" width=900> 
+	</div>	
+
 
         <!-- MAIN -->
 
@@ -37,21 +59,6 @@ if ( ($live) || ($dev) ) {
         </p>
         </div>
 
-
-	<!-- MIDDLE -->
-
-	<!-- 
-	<div id='00' class="middleContainer">
-		<video height="480" width="853" autoplay="autoplay" loop muted style="margin-top:-240px;margin-left:-426px;"> 
-			<source src="MEDIA/To-be-continued_01_white_480p_low.mov" type="video/mp4" />
-	  		Your browser does not support the video tag.
-		</video>
-	</div>	
-	-->
-	<div id='00' class="middleContainer" style="margin-top:0px;margin-left:-350px;">
-		<!-- <img src="MEDIA/KuwaitNationalMuseum.gif"> --> 
-		<img src="MEDIA/00001.jpg" width=800>
-	</div>	
 
 		<?php
 		/*

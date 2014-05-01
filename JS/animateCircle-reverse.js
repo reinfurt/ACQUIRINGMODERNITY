@@ -10,11 +10,10 @@
                 centerX = canvas.width / 2;
                 centerY = canvas.height / 2;
                 context.fillStyle = "white";
-                context.lineWidth = 5;
-                // context.strokeStyle = "#FFF";
+                context.lineWidth = 6;
 		var grad = context.createLinearGradient(50, 50, 150, 150);
-		grad.addColorStop(0, "#FF0000");
-		grad.addColorStop(1, "#0000FF");
+		grad.addColorStop(0, "#F00");
+		grad.addColorStop(1, "#00F");
 		context.strokeStyle = grad;
                 counter = 0;
                 radius = canvas.width/2.25;

@@ -16,7 +16,7 @@
 
 			thisCanvas[i] = document.getElementById("canvas"+i);
 			thisContext[i] = thisCanvas[i].getContext("2d");
-			thisContext[i].fillStyle = "#0000FF";
+			thisContext[i].fillStyle = "#00F";
 			thisContext[i].font = "15px Tahoma";
 			thisContext[i].textAlign = "left";
 			thisContext[i].textBaseline = "middle";
@@ -25,7 +25,7 @@
 
 		// hack
 		thisContext[0].textAlign = "right";
-		thisContext[0].fillStyle = "#FF0000";
+		thisContext[0].fillStyle = "#F00";
 
 		// init array of arrays per canvas animation 
 

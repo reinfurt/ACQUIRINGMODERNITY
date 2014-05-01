@@ -15,7 +15,7 @@ if ( ($live) || ($dev) ) {
                 }
                 ?>	
 		<div>
-			<a href="project.php">
+			<a href="<?php echo ($pageName == 'project') ? 'index.php' : 'project.php' ?>">
                         	<canvas id="canvas3" width="200" height="200">
 				loading...
         	        	</canvas>

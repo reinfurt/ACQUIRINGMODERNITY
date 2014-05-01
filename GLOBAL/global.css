@@ -47,9 +47,19 @@ a:active {
         font-family: Monaco, "Lucida Console", monospace;
         }
 
+.courier {
+        font-family: "Courier New", Courier, monospace;
+        }
+
 .big {
         font-size: 26px;
         line-height: 26px;
+        }
+
+.medium {
+        font-size: 14px;
+        line-height: 20px;
+	/* letter-spacing: 1px; */
         }
 
 .caption {
@@ -129,8 +139,8 @@ a:active {
 	left: 50%;
  	/* margin-top: -240px; */
 	/* margin-left: -426px; */
-	width: 853px;
-	height: 480px;
+	width: 900px;
+	height: 300px;
 	}	
 
 .topleftContainer {
@@ -239,7 +249,7 @@ a:active {
 /* Utility */
 
 .red{
-	color:#C00;
+	color:#F00;
 	}
 
 .red a {
@@ -247,17 +257,18 @@ a:active {
 	}
 
 .green{
-	color:#0A0;
+	color:#609;
 	}
 
 .green a {
-	color:#0C0;
+	color:#C0C;
 	}
 
 .blue{
-	color:#00A;
+	color:#0CF;
 	}
 
 .blue a {
 	color:#00F;
 	}
+
