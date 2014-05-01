@@ -26,6 +26,7 @@ if ( ($dev) || ($live) ) {
 		<!-- <img src="MEDIA/Kuwait-National-Museum-build" width=900> -->
 		<!-- <img src="MEDIA/Kuwait-National-Museum-build-inverse-pattern.gif" width=900> -->
 		<img src="MEDIA/00017.jpg" width=850>
+		<!-- <img src="MEDIA/00014.gif" width=850> -->
 	</div>	
 
 

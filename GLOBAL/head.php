@@ -69,7 +69,7 @@
 	<div id='arabic' class='arabicContainer tahoma' dir="rtl" lang="AR">
 		<a href="<?php echo $pageName; ?>.php?language=ar"><canvas id="canvas0" width="200" height="15"> اقتناء الحداثة</canvas></a><br />
 		<?php 
-		if ($language=="ar") {
+		if (($language=="ar") && ($pageName!="subscribe")) {
 		?>
 		مشاركة الكويت في معرض العمارة الدولي الرابع عشر - بيينالي البندقية 
 		<?php
@@ -80,7 +80,7 @@
 	<div id='english' class='englishContainer tahoma'>
 		<a href="<?php echo $pageName; ?>.php?language=en"><canvas id="canvas1" width="200" height="15">Acquiring Modernity</canvas></a><br />
         	<?php
-	        if ($language=="en") {
+	        if (($language=="en") && ($pageName!="subscribe")) {
         	?>		
 		Kuwait's Pavilion at the 14th International Architecture Exhibition of la Biennale di Venezia
 		<?php

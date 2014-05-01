@@ -4,13 +4,15 @@ require_once("_Library/systemEmail.php");
 ?>
 
 	
-	
+<div class="englishMainContainer courier medium" style="padding: 20px;">	
 		
 	
 <?php
 	
 $subscribe = $_REQUEST['subscribe'];
 $unsubscribe = $_REQUEST['unsubscribe'];
+$sender = $_REQUEST['sender'];
+
 	
 	
   //////////////////////////////////
@@ -21,8 +23,8 @@ $unsubscribe = $_REQUEST['unsubscribe'];
 
 //  Head Navigation
 
-$html  = 	"\n\t\t<span class=\"Menu\">To subscribe or unsubscribe from our mailing list,<br />
-			please enter your email address below.</span>"; 
+$html  = 	"\n\t\t<span class=\"Menu\">To subscribe or unsubscribe, please enter<br />your email address 
+below.</span>"; 
 
 if ($subscribe) {
 
@@ -41,6 +43,7 @@ if ($subscribe) {
 
 	$html .= "\n\n\n\n\n\t\t<!--  Email Form  -->\n<br /><br />";
 	$html .= "\n\t\tThanks.";	
+	$html .= "\n\t\t<br /><a href='javascript: self.close();'>Close this window</a>";
 
 } else if ($unsubscribe) {
 
@@ -59,6 +62,7 @@ if ($subscribe) {
 
 	$html .= "\n\n\n\n\n\t\t<!--  Email Form  -->\n<br /><br />";
 	$html .= "\n\t\tThanks.";
+	$html .= "\n\t\t<br /><a href='javascript: self.close();'>Close this window</a>";
 
 
 
@@ -79,6 +83,7 @@ if ($subscribe) {
 echo $html;
 ?>
 
+</div>
 </div>
 </body>
 </html> 

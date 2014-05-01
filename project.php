@@ -40,29 +40,78 @@ require_once("GLOBAL/head.php");
 
 	<!-- MIDDLE -->
 
+	<?php
+	if (($language=="ar") && ($pageName!="subscribe")) {
+	?>
+
+        <!--  ARABIC  -->
+         
+        <div id="I" class="bottomrightContainer courier medium" dir="rtl" lang="AR">
+                <div id="02inner" class="innerContainerCenteredArabic">
+                        <a href="detail.php?id=2,9">I. 
+الثقافة والإدارة
+			</a>	
+                </div>
+        </div>
+
+        <div id="II" class="toprightContainer courier medium" dir="rtl" lang="AR">
+                <div id="02inner" class="innerContainerCenteredArabic">
+                        <a href="detail.php?id=2,10">II. 
+أرض الكويت
+			</a>	
+                </div>
+        </div>
+
+        <div id="III" class="topleftContainer courier medium" dir="rtl" lang="AR">
+                <div id="02inner" class="innerContainerCenteredArabic">
+                        <a href="detail.php?id=2,11">III. 
+الإنسان الكويتي
+			</a>	
+                </div>
+        </div>
+
+        <div id="IV" class="bottomleftContainer courier medium" dir="rtl" lang="AR">
+                <div id="02inner" class="innerContainerCenteredArabic">
+                        <a href="detail.php?id=2,12">IV. 
+كويت اليوم والغد
+			</a>	
+                </div>
+        </div>
+       
+	<?php
+	} else {
+	?>
+
+
+        <!--  ENGLISH  -->
+
 	<div id="I" class="bottomleftContainer courier medium">
-                <div id="02inner" class="innerContainerCentered">
+                <div id="02inner" class="innerContainerCenteredEnglish">
 			<a href="detail.php?id=1,4">I. CULTURE AND ADMINISTRATION</a>
                 </div>
         </div>
 
 	<div id="II" class="topleftContainer courier medium">
-                <div id="02inner" class="innerContainerCentered">
+                <div id="02inner" class="innerContainerCenteredEnglish">
 			<a href="detail.php?id=1,5">II. LAND OF KUWAIT</a>
                 </div>
         </div>
 
 	<div id="III" class="toprightContainer courier medium">
-                <div id="02inner" class="innerContainerCentered">
+                <div id="02inner" class="innerContainerCenteredEnglish">
 			<a href="detail.php?id=1,6">III. MAN OF KUWAIT</a>
                 </div>
         </div>
 
 	<div id="IV" class="bottomrightContainer courier medium">
-                <div id="02inner" class="innerContainerCentered">
+                <div id="02inner" class="innerContainerCenteredEnglish">
 			<a href="detail.php?id=1,7">IV. KUWAIT TODAY AND TOMORROW</a>
                 </div>
         </div>
+
+	<?php
+	}
+	?>
 
 	
 <?php

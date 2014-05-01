@@ -187,9 +187,16 @@ a:active {
 	bottom: 10px;
 	}	
 
-.innerContainerCentered {
+.innerContainerCenteredEnglish {
 	position: absolute;
 	left:35%;
+	top:50%;
+	width:50%;
+	}
+
+.innerContainerCenteredArabic {
+	position: absolute;
+	right:35%;
 	top:50%;
 	width:50%;
 	}
@@ -261,11 +268,11 @@ a:active {
 	}
 
 .green a {
-	color:#C0C;
+	color:#609;
 	}
 
 .blue{
-	color:#0CF;
+	color:#00F;
 	}
 
 .blue a {
