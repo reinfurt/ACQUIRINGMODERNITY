@@ -225,15 +225,15 @@ a:active {
 	}
 
 .active a {
-	color:#000;
+	/*color:#000;*/
 	}
 
 .active a:hover {
-	color:#00F;
+	/*color:#00F;*/
 	}
 
 .active a:active {
-	color:#FFF;
+	/*color:#FFF;*/
 	}
 
 .static {
@@ -241,7 +241,7 @@ a:active {
 	}
 	
 .static a {
-	/* color:#FC0; */
+	/*color:#FC0;*/
 	}
 
 .static a:hover {
