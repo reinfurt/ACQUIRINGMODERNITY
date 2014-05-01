@@ -1,0 +1,4 @@
+AuthUserFile /usr/home/acqmod/public_html/acquiringmodernity.com/.htpasswd
+AuthName "OPEN-RECORDS-GENERATOR"
+AuthType Basic
+Require valid-user
