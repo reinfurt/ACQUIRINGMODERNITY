@@ -46,7 +46,7 @@ require_once("GLOBAL/head.php");
 
         <!--  ARABIC  -->
          
-        <div id="I" class="bottomrightContainer courier medium red" dir="rtl" 
+        <div id="I" class="bottomrightContainer courier mediumadjust red" dir="rtl" 
 lang="AR">
                 <div id="02inner" class="innerContainerCenteredArabic">
                         <a href="detail.php?id=2,9">I. 
@@ -55,7 +55,7 @@ lang="AR">
                 </div>
         </div>
 
-        <div id="II" class="toprightContainer courier medium red" dir="rtl" 
+        <div id="II" class="toprightContainer courier mediumadjust red" dir="rtl" 
 lang="AR">
                 <div id="02inner" class="innerContainerCenteredArabic">
                         <a href="detail.php?id=2,10">II. 
@@ -64,7 +64,7 @@ lang="AR">
                 </div>
         </div>
 
-        <div id="III" class="topleftContainer courier medium red" dir="rtl" 
+        <div id="III" class="topleftContainer courier mediumadjust red" dir="rtl" 
 lang="AR">
                 <div id="02inner" class="innerContainerCenteredArabic">
                         <a href="detail.php?id=2,11">III. 
@@ -73,7 +73,7 @@ lang="AR">
                 </div>
         </div>
 
-        <div id="IV" class="bottomleftContainer courier medium red" dir="rtl" 
+        <div id="IV" class="bottomleftContainer courier mediumadjust red" dir="rtl" 
 lang="AR">
                 <div id="02inner" class="innerContainerCenteredArabic">
                         <a href="detail.php?id=2,12">IV. 

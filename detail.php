@@ -35,7 +35,8 @@ require_once("GLOBAL/head.php");
 
 	<!-- TEXT COLUMN --> 
 
-	<div id='text' <?php echo ($language == "en") ? "class='leftContainer courier medium'" : "class='rightContainer courier medium' dir='rtl' lang='AR'" ?>>
+	<div id='text' <?php echo ($language == "en") ? "class='leftContainer courier medium'" : "class='rightContainer courier 
+mediumadjust' dir='rtl' lang='AR'" ?>>
 
 		<?php
 	

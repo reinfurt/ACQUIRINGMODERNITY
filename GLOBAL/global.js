@@ -12,7 +12,10 @@ function displayTime() {
 	serverdate.setSeconds(serverdate.getSeconds()+1);
 
 	// var datestring = padlength(serverdate.getFullYear() + " " + montharray[serverdate.getMonth()] + " " + serverdate.getDate()) + " ";
-	var datestring = padlength(serverdate.getFullYear() + "/" + serverdate.getMonth() + "/" + serverdate.getDate()) + " ";
+	// var datestring = padlength(serverdate.getFullYear() + "/" + serverdate.getMonth() + "/" + serverdate.getDate()) + " "; 
+
+	var thisHackedMonth = serverdate.getMonth()+1;		// no idea why this is happening
+	var datestring = padlength(serverdate.getFullYear() + "/" + thisHackedMonth  + "/" + serverdate.getDate()) + " ";
 			
 	// convert to 12 hour
 			

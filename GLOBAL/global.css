@@ -62,6 +62,12 @@ a:active {
 	/* letter-spacing: 1px; */
         }
 
+.mediumadjust {
+        font-size: 15px;
+        line-height: 20px;
+	/* letter-spacing: 1px; */
+        }
+
 .caption {
         font-size: 12px;
         line-height: 14px;
