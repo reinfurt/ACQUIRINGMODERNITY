@@ -81,6 +81,15 @@ lang="AR">
 			</a>	
                 </div>
         </div>
+
+        <div id="PLANETARIUM" class="planetariumContainer courier medium">
+                <div id="02inner" class="innerContainerCenteredEnglish">
+                        <a href="detail.php?id=1,8">*.
+القبة السماوية
+			</a>
+                </div>
+        </div>
+
        
 	<?php
 	} else {
@@ -115,7 +124,7 @@ lang="AR">
 
 	<div id="PLANETARIUM" class="planetariumContainer courier medium">
                 <div id="02inner" class="innerContainerCenteredEnglish">
-			<a href="detail.php?id=1,7">*.PLANETARIUM</a>
+			<a href="detail.php?id=1,8">*.PLANETARIUM</a>
                 </div>
         </div>
 
