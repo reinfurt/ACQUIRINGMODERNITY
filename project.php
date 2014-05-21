@@ -113,6 +113,13 @@ lang="AR">
                 </div>
         </div>
 
+	<div id="PLANETARIUM" class="planetariumContainer courier medium">
+                <div id="02inner" class="innerContainerCenteredEnglish">
+			<a href="detail.php?id=1,7">*.PLANETARIUM</a>
+                </div>
+        </div>
+
+
 	<?php
 	}
 	?>

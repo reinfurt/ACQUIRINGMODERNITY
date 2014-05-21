@@ -193,6 +193,14 @@ a:active {
 	bottom: 10px;
 	}	
 
+.planetariumContainer {
+	position: fixed;
+	right: 176px;
+	bottom: 126px;
+	z-index: 99;
+	/*width: 200px;*/
+	}	
+
 .innerContainerCenteredEnglish {
 	position: absolute;
 	left:35%;
