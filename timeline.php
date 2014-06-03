@@ -100,8 +100,8 @@ wires, media WHERE objects.id = $id AND wires.toid = objects.id AND media.object
 			while ( $myrow  =  MYSQL_FETCH_ARRAY($result) ) {
 					
 		
-				// $mediaFile = "MEDIA/". str_pad($myrow["mediaId"], 5, "0", STR_PAD_LEFT) .".". $myrow["type"];
-				$mediaFile = "http://acquiringmodernity.com/MEDIA/". str_pad($myrow["mediaId"], 5, "0", STR_PAD_LEFT) .".". $myrow["type"];
+				$mediaFile = "MEDIA/". str_pad($myrow["mediaId"], 5, "0", STR_PAD_LEFT) .".". $myrow["type"];
+				// $mediaFile = "http://acquiringmodernity.com/MEDIA/". str_pad($myrow["mediaId"], 5, "0", STR_PAD_LEFT) .".". $myrow["type"];
 				$mediaCaption = strip_tags($myrow["caption"]);
 				$mediaStyle = "width: 100%;";
 				$html .= "<div id='image".$i."' class = 'imageContainer' onclick='expandImage(\"image".$i."\", \"100px\", \"0px\");' style='padding:100px;'>";
