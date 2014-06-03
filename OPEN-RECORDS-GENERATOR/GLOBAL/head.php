@@ -101,6 +101,13 @@ $objects = explode(",", $object);
 $object = $objects[sizeof($objects) - 1];
 if (!$object) $object = 0;
 
+// KUWAIT-specific hack
+// check for language branches
+
+if (in_array("15", $objects)) {
+    $languageDirectionRight=TRUE;
+}
+
 // Check that selected object exists
 
 if ($object && is_numeric($object)) {

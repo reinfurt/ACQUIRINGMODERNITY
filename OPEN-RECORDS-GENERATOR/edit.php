@@ -6,8 +6,6 @@ echo "\n\n\n\n<br /><br />\n\n";
 
 
 
-
-
 if ($action != "update") {
 
 
@@ -25,7 +23,6 @@ if ($action != "update") {
 		$myrow = MYSQL_FETCH_ARRAY($result);
 		?>
 
-
 		<br />
 		<table cellpadding="0" cellspacing="0" border="0">
 		<form enctype="multipart/form-data" action="<?php echo $dbAdmin ."edit.php". urlData(); ?>" method="post" style="margin: 0; padding: 0;">
@@ -33,22 +30,28 @@ if ($action != "update") {
 		<input name='action' type='hidden' value='update'>
 
 		<tr><td width="90">Name&nbsp; </td>
-		<td><textarea name='name1' cols='40' rows='3'><?php echo $myrow["name1"]; ?></textarea></td></tr>
+		<td><textarea name='name1' cols='40' rows='3' <?php echo ($languageDirectionRight) ?  "dir='rtl' lang='AR'" : "" 
+?>><?php echo $myrow["name1"]; ?></textarea></td></tr>
 
 		<tr><td>Synopsis&nbsp; </td>
-		<td><textarea name='deck' cols='40' rows='3'><?php echo $myrow["deck"]; ?></textarea></td></tr>
+		<td><textarea name='deck' cols='40' rows='3' <?php echo ($languageDirectionRight) ?  "dir='rtl' lang='AR'" : ""
+?>><?php echo $myrow["deck"]; ?></textarea></td></tr>
 
 		<tr><td>Detail&nbsp; </td>
-		<td><textarea name='body' cols='40' rows='12'><?php echo $myrow["body"]; ?></textarea></td></tr>
+		<td><textarea name='body' cols='40' rows='12' <?php echo ($languageDirectionRight) ?  "dir='rtl' lang='AR'" : ""
+?>><?php echo $myrow["body"]; ?></textarea></td></tr>
 
 		<tr><td>URL&nbsp; </td>
-		<td><textarea name='url' cols='40' rows='3'><?php echo $myrow["url"]; ?></textarea></td></tr>
+		<td><textarea name='url' cols='40' rows='3' <?php echo ($languageDirectionRight) ?  "dir='rtl' lang='AR'" : ""
+?>><?php echo $myrow["url"]; ?></textarea></td></tr>
 
 		<tr><td>Date&nbsp; </td>
-		<td><textarea name='end' cols='40' rows='3'><?php echo $myrow["end"]; ?></textarea></td></tr>
+		<td><textarea name='end' cols='40' rows='3' <?php echo ($languageDirectionRight) ?  "dir='rtl' lang='AR'" : ""
+?>><?php echo $myrow["end"]; ?></textarea></td></tr>
 
 		<tr><td>Rank&nbsp; </td>
-		<td><textarea name='rank' cols='3' rows='3'><?php echo $myrow["rank"]; ?></textarea>
+		<td><textarea name='rank' cols='3' rows='3' <?php echo ($languageDirectionRight) ?  "dir='rtl' lang='AR'" : ""
+?>><?php echo $myrow["rank"]; ?></textarea>
 		<br /><br />&nbsp;</td></tr>
 		
 		
@@ -73,7 +76,10 @@ if ($action != "update") {
 			echo "\n<td><a href='$mediaFile' target='_blank'><img src='". $mediaFileDisplay ."' width='160' border='0'></a>";
 			echo "\n<input type='hidden' name='mediaId[". $j ."]' value='". $myrow["id"] ."' />";
 			echo "\n<input type='hidden' name='mediaType[". $j ."]' value='". $myrow["type"] ."' />";
-			echo "\n<br /><textarea name='mediaCaption[". $j ."]' cols='40' rows='3'>". $myrow["caption"] ."</textarea>";
+
+$thislanguageDirection = ($languageDirectionRight) ? "dir='rtl' lang='AR'" : "";
+			
+echo "\n<br /><textarea name='mediaCaption[". $j ."]' cols='40' rows='3' " . $thislanguageDirection . ">". $myrow["caption"] ."</textarea>";
 			echo "\n<br /><select name='mediaRank[". $j ."]'>";	
 			for ($k = 1; $k <= $num_rows; $k++) {
 				if ($k == $myrow["rank"]) echo "\n<option selected value=".$k.">".$k."</option>";
