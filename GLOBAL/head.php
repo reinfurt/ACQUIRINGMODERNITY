@@ -60,6 +60,7 @@
 	<script type="text/javascript" src="GLOBAL/global.js"></script>
 	<!-- <script src="_Processing/processing-1.4.1.min.js"></script> -->
 	<script type="text/javascript" src="JS/animateEmoticon.js"></script>
+	<script type="text/javascript" src="JS/jquery-1.11.1.min.js"></script>
 </head>
 
 <body onload="init(); initCircle(); displayTime(); setInterval('displayTime()',1000);">
