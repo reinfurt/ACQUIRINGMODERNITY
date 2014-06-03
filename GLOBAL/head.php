@@ -68,7 +68,8 @@
 	<!--  NAME  -->
 	
 	<div id='arabic' class='arabicContainer tahoma' dir="rtl" lang="AR">
-		<a href="<?php echo $pageName; ?>.php?language=ar"><canvas id="canvas0" width="200" height="15"> اقتناء الحداثة</canvas></a><br />
+		<a href="index.php?language=ar"><canvas 
+id="canvas0" width="200" height="15"> اقتناء الحداثة</canvas></a><br />
 		<?php 
 		if (($language=="ar") && ($pageName!="subscribe")) {
 		?>
@@ -79,7 +80,8 @@
 	</div>
 
 	<div id='english' class='englishContainer tahoma'>
-		<a href="<?php echo $pageName; ?>.php?language=en"><canvas id="canvas1" width="200" height="15">Acquiring Modernity</canvas></a><br />
+		<a href="index.php?language=en"><canvas id="canvas1" 
+width="200" height="15">Acquiring Modernity</canvas></a><br />
         	<?php
 	        if (($language=="en") && ($pageName!="subscribe")) {
         	?>		
