@@ -47,7 +47,7 @@ $(document).ready(function(){
                                 displayNavigation($path, $limit, $selection, $linkPageName, $stub, $breadcrumbsMode, $multiColumn, $thisLanguage);
                         ?>
                 </ul>
-        </p>
+        	</p>
         </div>
 
 	<!-- TEXT COLUMN --> 
@@ -89,10 +89,11 @@ mediumadjust' dir='rtl' lang='AR'" ?>>
 
 			// SQL object plus media	
 
-			$sql = "SELECT objects.id AS objectsId, objects.name1, objects.deck, objects.body, objects.active, objects.rank as objectsRank, 
-wires.fromid, wires.toid, wires.active, media.id AS mediaId, media.object AS mediaObject, media.type, media.caption, media.active, media.rank FROM objects, 
-wires, media WHERE objects.id = $id AND wires.toid = objects.id AND media.object = objects.id AND objects.active = '1' AND wires.active = '1' AND media.active = 
-'1' ORDER BY media.rank DESC;";
+			$sql = "SELECT objects.id AS objectsId, objects.name1, objects.deck, objects.body, objects.active, 
+objects.rank as objectsRank, wires.fromid, wires.toid, wires.active, media.id AS mediaId, media.object AS mediaObject, 
+media.type, media.caption, media.active, media.rank FROM objects, wires, media WHERE objects.id = $id AND wires.toid = 
+objects.id AND media.object = objects.id AND objects.active = '1' AND wires.active = '1' AND media.active = '1' ORDER BY 
+media.rank DESC;";
 			$result =  MYSQL_QUERY($sql);
 			$html = "";
 			$i = 0;
