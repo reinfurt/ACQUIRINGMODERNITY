@@ -4,7 +4,7 @@ require_once("GLOBAL/head.php");
 
 <script type="text/javascript">
 
-// parallax scrolling
+// parallax scrolling, not working correctly
 
 $(document).ready(function(){
     $('#textScroll').scroll(function(){
